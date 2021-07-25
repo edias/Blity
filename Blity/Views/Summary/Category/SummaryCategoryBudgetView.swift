@@ -12,10 +12,6 @@ struct SummaryCategoryBudgetView: View {
     var budget: Int
     var totalSpent: Int
     
-    private func makePercentage(_ percentage: CGFloat, total: CGFloat) -> CGFloat {
-        total * percentage / 100
-    }
-    
     var body: some View {
         
         GeometryReader { geometry in
@@ -62,12 +58,16 @@ struct SummaryCategoryBudgetView: View {
             }.padding(.all, 2)
         }
     }
+    
+    private func makePercentage(_ percentage: CGFloat, total: CGFloat) -> CGFloat {
+        total * percentage / 100
+    }
 }
 
 struct BudgetDisplayer_Previews: PreviewProvider {
     static var previews: some View {
         SummaryCategoryBudgetView(budget: 300, totalSpent: 110)
-            .previewLayout(.fixed(width: 300, height: 50))
+            .previewLayout(.fixed(width:420, height: 50))
     }
 }
  
