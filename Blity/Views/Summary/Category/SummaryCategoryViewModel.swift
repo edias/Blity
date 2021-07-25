@@ -11,9 +11,9 @@ struct SummaryCategoryViewModel {
     
     private let expenses: CategoryExpenses
     
-    var categoryName: String { expenses.category.name }
-    var categoryIcon: String { expenses.category.icon }
-    var budget: Int { expenses.categoryBudget }
+    var categoryName: String { expenses.name }
+    var categoryIcon: String { expenses.iconName }
+    var budget: Int { expenses.budget }
     var totalSpent: Int { expenses.totalSpent }
     
     init(expenses: CategoryExpenses) {
@@ -22,11 +22,11 @@ struct SummaryCategoryViewModel {
     
     var tracking: (message: String, icon: String) {
         
-        let percentageSpent =  100 * expenses.totalSpent / expenses.categoryBudget
+        let percentageSpent =  100 * expenses.totalSpent / expenses.budget
         
         switch percentageSpent {
             case (0...77):
-                return (message: "Your \(expenses.categoryName.lowercased()) spending is still on track", icon: "CheckIcon")
+                return (message: "Your \(categoryName.lowercased()) spending is still on track", icon: "CheckIcon")
             case (78...85):
                 return (message:"You are almost exceeding your budget", icon: "WarningIcon")
             case (86...99):

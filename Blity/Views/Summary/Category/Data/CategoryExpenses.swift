@@ -8,11 +8,10 @@
 import Foundation
 
 struct CategoryExpenses {
+    let categoryBudget: CategoryBudget
+    let totalSpent: Int
     
-    var category: Category
-    var totalSpent: Int
-    
-    var categoryName: String { category.name }
-    var categoryIcon: String { category.icon }
-    var categoryBudget: Int { category.budget }
+    var name: String { categoryBudget.name }
+    var iconName: String { categoryBudget.iconName }
+    var budget: Int { categoryBudget.budget }
 }

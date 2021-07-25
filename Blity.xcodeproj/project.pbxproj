@@ -22,6 +22,8 @@
 		F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B026AD7AD5005F5F19 /* Category.swift */; };
 		F8CA48B426AD7AEF005F5F19 /* CategoryExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B326AD7AEF005F5F19 /* CategoryExpenses.swift */; };
 		F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B526AD8F97005F5F19 /* SummaryCategoryViewModel.swift */; };
+		F8CA48B826ADA905005F5F19 /* CategoryBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B726ADA904005F5F19 /* CategoryBudget.swift */; };
+		F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48BA26ADA932005F5F19 /* String+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		F8CA48B026AD7AD5005F5F19 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F8CA48B326AD7AEF005F5F19 /* CategoryExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExpenses.swift; sourceTree = "<group>"; };
 		F8CA48B526AD8F97005F5F19 /* SummaryCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCategoryViewModel.swift; sourceTree = "<group>"; };
+		F8CA48B726ADA904005F5F19 /* CategoryBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBudget.swift; sourceTree = "<group>"; };
+		F8CA48BA26ADA932005F5F19 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		F8CA486B26AD297E005F5F19 /* Blity */ = {
 			isa = PBXGroup;
 			children = (
+				F8CA48B926ADA922005F5F19 /* Extensions */,
 				F8CA489F26AD3A10005F5F19 /* Views */,
 				F8CA486C26AD297E005F5F19 /* BlityApp.swift */,
 				F8CA487026AD297E005F5F19 /* Assets.xcassets */,
@@ -201,8 +206,17 @@
 			children = (
 				F8CA48B026AD7AD5005F5F19 /* Category.swift */,
 				F8CA48B326AD7AEF005F5F19 /* CategoryExpenses.swift */,
+				F8CA48B726ADA904005F5F19 /* CategoryBudget.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F8CA48B926ADA922005F5F19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA48BA26ADA932005F5F19 /* String+Utils.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,11 +351,13 @@
 				F8CA48B426AD7AEF005F5F19 /* CategoryExpenses.swift in Sources */,
 				F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */,
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
+				F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */,
 				F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */,
 				F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */,
 				F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */,
 				F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */,
 				F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */,
+				F8CA48B826ADA905005F5F19 /* CategoryBudget.swift in Sources */,
 				F8CA48AA26AD43DD005F5F19 /* SummaryCategoryBudgetView.swift in Sources */,
 				F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */,
 				F8CA48AC26AD6D63005F5F19 /* Splitter.swift in Sources */,
