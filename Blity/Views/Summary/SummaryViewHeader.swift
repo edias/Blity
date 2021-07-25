@@ -1,5 +1,5 @@
 //
-//  Header.swift
+//  SummaryViewHeader.swift
 //  Blity
 //
 //  Created by Eduardo Dias on 25/07/21.
