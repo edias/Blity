@@ -11,7 +11,7 @@ import SwiftUI
 struct BlityApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SummaryView()
         }
     }
 }

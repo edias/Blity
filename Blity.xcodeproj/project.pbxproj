@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
-		F8CA486F26AD297E005F5F19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* ContentView.swift */; };
+		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
 		F8CA487126AD297E005F5F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CA487026AD297E005F5F19 /* Assets.xcassets */; };
 		F8CA487426AD297E005F5F19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CA487326AD297E005F5F19 /* Preview Assets.xcassets */; };
 		F8CA487F26AD297E005F5F19 /* BlityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA487E26AD297E005F5F19 /* BlityTests.swift */; };
 		F8CA488A26AD297E005F5F19 /* BlityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA488926AD297E005F5F19 /* BlityUITests.swift */; };
+		F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */; };
+		F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA489B26AD3780005F5F19 /* SummaryViewHeader.swift */; };
+		F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA489D26AD38A8005F5F19 /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
-		F8CA486E26AD297E005F5F19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8CA486E26AD297E005F5F19 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		F8CA487026AD297E005F5F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CA487326AD297E005F5F19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8CA487526AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +48,9 @@
 		F8CA488526AD297E005F5F19 /* BlityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA488926AD297E005F5F19 /* BlityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityUITests.swift; sourceTree = "<group>"; };
 		F8CA488B26AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleWithBottomCurve.swift; sourceTree = "<group>"; };
+		F8CA489B26AD3780005F5F19 /* SummaryViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewHeader.swift; sourceTree = "<group>"; };
+		F8CA489D26AD38A8005F5F19 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,8 @@
 		F8CA486B26AD297E005F5F19 /* Blity */ = {
 			isa = PBXGroup;
 			children = (
+				F8CA489F26AD3A10005F5F19 /* Views */,
 				F8CA486C26AD297E005F5F19 /* BlityApp.swift */,
-				F8CA486E26AD297E005F5F19 /* ContentView.swift */,
 				F8CA487026AD297E005F5F19 /* Assets.xcassets */,
 				F8CA487526AD297E005F5F19 /* Info.plist */,
 				F8CA487226AD297E005F5F19 /* Preview Content */,
@@ -128,6 +134,33 @@
 				F8CA488B26AD297E005F5F19 /* Info.plist */,
 			);
 			path = BlityUITests;
+			sourceTree = "<group>";
+		};
+		F8CA489F26AD3A10005F5F19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA48A126AD3A31005F5F19 /* Shared */,
+				F8CA48A026AD3A16005F5F19 /* Summary */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8CA48A026AD3A16005F5F19 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */,
+				F8CA486E26AD297E005F5F19 /* SummaryView.swift */,
+				F8CA489B26AD3780005F5F19 /* SummaryViewHeader.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		F8CA48A126AD3A31005F5F19 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA489D26AD38A8005F5F19 /* ColorPalette.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CA486F26AD297E005F5F19 /* ContentView.swift in Sources */,
+				F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */,
+				F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */,
+				F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */,
+				F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */,
 				F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
