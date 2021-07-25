@@ -20,7 +20,7 @@ struct SummaryViewHeader: View {
     }
 }
 
-struct Header_Previews: PreviewProvider {
+struct SummaryViewHeader_Previews: PreviewProvider {
     static var previews: some View {
         SummaryViewHeader(colors: [ColorPalette.primaryColor, ColorPalette.secondaryColor])
             .previewLayout(.fixed(width: 400, height: 400))
