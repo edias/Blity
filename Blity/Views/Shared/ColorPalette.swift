@@ -14,4 +14,5 @@ enum ColorPalette {
     static let primarySupportingColor = Color("PrimarySupportingColor")
     static let primarySupportingContrastColor = Color("PrimarySupportingContrastColor")
     static let secondarySupportingColor = Color("SecondarySupportingColor")
+    static let secondarySupportingContrastColor = Color("SecondarySupportingContrastColor")
 }

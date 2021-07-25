@@ -21,6 +21,7 @@
 		F8CA48AC26AD6D63005F5F19 /* Splitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48AB26AD6D63005F5F19 /* Splitter.swift */; };
 		F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B026AD7AD5005F5F19 /* Category.swift */; };
 		F8CA48B426AD7AEF005F5F19 /* CategoryExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B326AD7AEF005F5F19 /* CategoryExpenses.swift */; };
+		F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B526AD8F97005F5F19 /* SummaryCategoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F8CA48AB26AD6D63005F5F19 /* Splitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splitter.swift; sourceTree = "<group>"; };
 		F8CA48B026AD7AD5005F5F19 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F8CA48B326AD7AEF005F5F19 /* CategoryExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExpenses.swift; sourceTree = "<group>"; };
+		F8CA48B526AD8F97005F5F19 /* SummaryCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCategoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				F8CA48AB26AD6D63005F5F19 /* Splitter.swift */,
 				F8CA48A426AD3DCE005F5F19 /* SummaryCategoryView.swift */,
 				F8CA48A926AD43DD005F5F19 /* SummaryCategoryBudgetView.swift */,
+				F8CA48B526AD8F97005F5F19 /* SummaryCategoryViewModel.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */,
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
 				F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */,
+				F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */,
 				F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */,
 				F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */,
 				F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */,

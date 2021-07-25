@@ -52,9 +52,6 @@ struct SummaryCategoryBudgetView: View {
                 }
                 .padding(.trailing, makePercentage(15, total: geometry.size.width))
                 .padding(.vertical, 5)
-                
-                
-                
             }.padding(.all, 2)
         }
     }
