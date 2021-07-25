@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
+		F8CA486F26AD297E005F5F19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* ContentView.swift */; };
+		F8CA487126AD297E005F5F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CA487026AD297E005F5F19 /* Assets.xcassets */; };
+		F8CA487426AD297E005F5F19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CA487326AD297E005F5F19 /* Preview Assets.xcassets */; };
+		F8CA487F26AD297E005F5F19 /* BlityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA487E26AD297E005F5F19 /* BlityTests.swift */; };
+		F8CA488A26AD297E005F5F19 /* BlityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA488926AD297E005F5F19 /* BlityUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8CA487B26AD297E005F5F19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8CA486126AD297D005F5F19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8CA486826AD297E005F5F19;
+			remoteInfo = Blity;
+		};
+		F8CA488626AD297E005F5F19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8CA486126AD297D005F5F19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8CA486826AD297E005F5F19;
+			remoteInfo = Blity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
+		F8CA486E26AD297E005F5F19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8CA487026AD297E005F5F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8CA487326AD297E005F5F19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8CA487526AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8CA487A26AD297E005F5F19 /* BlityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CA487E26AD297E005F5F19 /* BlityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityTests.swift; sourceTree = "<group>"; };
+		F8CA488026AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8CA488526AD297E005F5F19 /* BlityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CA488926AD297E005F5F19 /* BlityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityUITests.swift; sourceTree = "<group>"; };
+		F8CA488B26AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8CA486626AD297E005F5F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CA487726AD297E005F5F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CA488226AD297E005F5F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8CA486026AD297D005F5F19 = {
+			isa = PBXGroup;
+			children = (
+				F8CA486B26AD297E005F5F19 /* Blity */,
+				F8CA487D26AD297E005F5F19 /* BlityTests */,
+				F8CA488826AD297E005F5F19 /* BlityUITests */,
+				F8CA486A26AD297E005F5F19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8CA486A26AD297E005F5F19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA486926AD297E005F5F19 /* Blity.app */,
+				F8CA487A26AD297E005F5F19 /* BlityTests.xctest */,
+				F8CA488526AD297E005F5F19 /* BlityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8CA486B26AD297E005F5F19 /* Blity */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA486C26AD297E005F5F19 /* BlityApp.swift */,
+				F8CA486E26AD297E005F5F19 /* ContentView.swift */,
+				F8CA487026AD297E005F5F19 /* Assets.xcassets */,
+				F8CA487526AD297E005F5F19 /* Info.plist */,
+				F8CA487226AD297E005F5F19 /* Preview Content */,
+			);
+			path = Blity;
+			sourceTree = "<group>";
+		};
+		F8CA487226AD297E005F5F19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA487326AD297E005F5F19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8CA487D26AD297E005F5F19 /* BlityTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA487E26AD297E005F5F19 /* BlityTests.swift */,
+				F8CA488026AD297E005F5F19 /* Info.plist */,
+			);
+			path = BlityTests;
+			sourceTree = "<group>";
+		};
+		F8CA488826AD297E005F5F19 /* BlityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA488926AD297E005F5F19 /* BlityUITests.swift */,
+				F8CA488B26AD297E005F5F19 /* Info.plist */,
+			);
+			path = BlityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8CA486826AD297E005F5F19 /* Blity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CA488E26AD297E005F5F19 /* Build configuration list for PBXNativeTarget "Blity" */;
+			buildPhases = (
+				F8CA486526AD297E005F5F19 /* Sources */,
+				F8CA486626AD297E005F5F19 /* Frameworks */,
+				F8CA486726AD297E005F5F19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blity;
+			productName = Blity;
+			productReference = F8CA486926AD297E005F5F19 /* Blity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8CA487926AD297E005F5F19 /* BlityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CA489126AD297E005F5F19 /* Build configuration list for PBXNativeTarget "BlityTests" */;
+			buildPhases = (
+				F8CA487626AD297E005F5F19 /* Sources */,
+				F8CA487726AD297E005F5F19 /* Frameworks */,
+				F8CA487826AD297E005F5F19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8CA487C26AD297E005F5F19 /* PBXTargetDependency */,
+			);
+			name = BlityTests;
+			productName = BlityTests;
+			productReference = F8CA487A26AD297E005F5F19 /* BlityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8CA488426AD297E005F5F19 /* BlityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CA489426AD297E005F5F19 /* Build configuration list for PBXNativeTarget "BlityUITests" */;
+			buildPhases = (
+				F8CA488126AD297E005F5F19 /* Sources */,
+				F8CA488226AD297E005F5F19 /* Frameworks */,
+				F8CA488326AD297E005F5F19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8CA488726AD297E005F5F19 /* PBXTargetDependency */,
+			);
+			name = BlityUITests;
+			productName = BlityUITests;
+			productReference = F8CA488526AD297E005F5F19 /* BlityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8CA486126AD297D005F5F19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F8CA486826AD297E005F5F19 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					F8CA487926AD297E005F5F19 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F8CA486826AD297E005F5F19;
+					};
+					F8CA488426AD297E005F5F19 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F8CA486826AD297E005F5F19;
+					};
+				};
+			};
+			buildConfigurationList = F8CA486426AD297D005F5F19 /* Build configuration list for PBXProject "Blity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8CA486026AD297D005F5F19;
+			productRefGroup = F8CA486A26AD297E005F5F19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8CA486826AD297E005F5F19 /* Blity */,
+				F8CA487926AD297E005F5F19 /* BlityTests */,
+				F8CA488426AD297E005F5F19 /* BlityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8CA486726AD297E005F5F19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CA487426AD297E005F5F19 /* Preview Assets.xcassets in Resources */,
+				F8CA487126AD297E005F5F19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CA487826AD297E005F5F19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CA488326AD297E005F5F19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8CA486526AD297E005F5F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CA486F26AD297E005F5F19 /* ContentView.swift in Sources */,
+				F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CA487626AD297E005F5F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CA487F26AD297E005F5F19 /* BlityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CA488126AD297E005F5F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CA488A26AD297E005F5F19 /* BlityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8CA487C26AD297E005F5F19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8CA486826AD297E005F5F19 /* Blity */;
+			targetProxy = F8CA487B26AD297E005F5F19 /* PBXContainerItemProxy */;
+		};
+		F8CA488726AD297E005F5F19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8CA486826AD297E005F5F19 /* Blity */;
+			targetProxy = F8CA488626AD297E005F5F19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8CA488C26AD297E005F5F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8CA488D26AD297E005F5F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8CA488F26AD297E005F5F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Blity/Preview Content\"";
+				DEVELOPMENT_TEAM = DW4ZNXNDJB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Blity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.Blity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8CA489026AD297E005F5F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Blity/Preview Content\"";
+				DEVELOPMENT_TEAM = DW4ZNXNDJB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Blity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.Blity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8CA489226AD297E005F5F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DW4ZNXNDJB;
+				INFOPLIST_FILE = BlityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.BlityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blity.app/Blity";
+			};
+			name = Debug;
+		};
+		F8CA489326AD297E005F5F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DW4ZNXNDJB;
+				INFOPLIST_FILE = BlityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.BlityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blity.app/Blity";
+			};
+			name = Release;
+		};
+		F8CA489526AD297E005F5F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DW4ZNXNDJB;
+				INFOPLIST_FILE = BlityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.BlityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blity;
+			};
+			name = Debug;
+		};
+		F8CA489626AD297E005F5F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DW4ZNXNDJB;
+				INFOPLIST_FILE = BlityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.BlityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8CA486426AD297D005F5F19 /* Build configuration list for PBXProject "Blity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CA488C26AD297E005F5F19 /* Debug */,
+				F8CA488D26AD297E005F5F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CA488E26AD297E005F5F19 /* Build configuration list for PBXNativeTarget "Blity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CA488F26AD297E005F5F19 /* Debug */,
+				F8CA489026AD297E005F5F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CA489126AD297E005F5F19 /* Build configuration list for PBXNativeTarget "BlityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CA489226AD297E005F5F19 /* Debug */,
+				F8CA489326AD297E005F5F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CA489426AD297E005F5F19 /* Build configuration list for PBXNativeTarget "BlityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CA489526AD297E005F5F19 /* Debug */,
+				F8CA489626AD297E005F5F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8CA486126AD297D005F5F19 /* Project object */;
+}
