@@ -24,7 +24,10 @@
 		F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B526AD8F97005F5F19 /* SummaryCategoryViewModel.swift */; };
 		F8CA48B826ADA905005F5F19 /* CategoryBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48B726ADA904005F5F19 /* CategoryBudget.swift */; };
 		F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48BA26ADA932005F5F19 /* String+Utils.swift */; };
-		F8CA48C026AFBA7A005F5F19 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48BF26AFBA7A005F5F19 /* TransactionsView.swift */; };
+		F8CA48C026AFBA7A005F5F19 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48BF26AFBA7A005F5F19 /* ExpensesView.swift */; };
+		F8CA48C226AFE180005F5F19 /* ExpenseEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */; };
+		F8ED5C4D26B0163500D46720 /* ExpenseEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */; };
+		F8ED5C4F26B0164400D46720 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED5C4E26B0164400D46720 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,10 @@
 		F8CA48B526AD8F97005F5F19 /* SummaryCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCategoryViewModel.swift; sourceTree = "<group>"; };
 		F8CA48B726ADA904005F5F19 /* CategoryBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBudget.swift; sourceTree = "<group>"; };
 		F8CA48BA26ADA932005F5F19 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
-		F8CA48BF26AFBA7A005F5F19 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		F8CA48BF26AFBA7A005F5F19 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntryView.swift; sourceTree = "<group>"; };
+		F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntryViewModel.swift; sourceTree = "<group>"; };
+		F8ED5C4E26B0164400D46720 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +166,7 @@
 			children = (
 				F8CA48A126AD3A31005F5F19 /* Shared */,
 				F8CA48A026AD3A16005F5F19 /* Summary */,
-				F8CA48BC26AFBA43005F5F19 /* Transactions */,
+				F8CA48BC26AFBA43005F5F19 /* Expenses */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 				F8CA48B026AD7AD5005F5F19 /* Category.swift */,
 				F8CA48B326AD7AEF005F5F19 /* CategoryExpenses.swift */,
 				F8CA48B726ADA904005F5F19 /* CategoryBudget.swift */,
+				F8ED5C4E26B0164400D46720 /* Currency.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -222,12 +229,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F8CA48BC26AFBA43005F5F19 /* Transactions */ = {
+		F8CA48BC26AFBA43005F5F19 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
-				F8CA48BF26AFBA7A005F5F19 /* TransactionsView.swift */,
+				F8CA48BF26AFBA7A005F5F19 /* ExpensesView.swift */,
+				F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */,
+				F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */,
 			);
-			path = Transactions;
+			path = Expenses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,10 +378,13 @@
 				F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */,
 				F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */,
 				F8CA48B826ADA905005F5F19 /* CategoryBudget.swift in Sources */,
+				F8CA48C226AFE180005F5F19 /* ExpenseEntryView.swift in Sources */,
+				F8ED5C4D26B0163500D46720 /* ExpenseEntryViewModel.swift in Sources */,
 				F8CA48AA26AD43DD005F5F19 /* SummaryCategoryBudgetView.swift in Sources */,
+				F8ED5C4F26B0164400D46720 /* Currency.swift in Sources */,
 				F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */,
 				F8CA48AC26AD6D63005F5F19 /* Splitter.swift in Sources */,
-				F8CA48C026AFBA7A005F5F19 /* TransactionsView.swift in Sources */,
+				F8CA48C026AFBA7A005F5F19 /* ExpensesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  TransactionsView.swift
+//  ExpensesView.swift
 //  Blity
 //
 //  Created by Eduardo Dias on 27/07/21.
@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-struct TransactionsView: View {
+struct ExpensesView: View {
+    
+    @State
+    private var isExpenseInProcess = false
     
     init() {
         let navigationBarAppearace = UINavigationBar.appearance()
@@ -18,21 +21,24 @@ struct TransactionsView: View {
     }
     
     var body: some View {
+        
         NavigationView {
             
             Text ("Items")
-                .navigationBarTitle(Text("Transactions"), displayMode: .inline)
+                .navigationBarTitle(Text("Expenses"), displayMode: .inline)
                 .toolbar {
-                    Button(action: { print("Edit button was tapped") }) {
+                    Button(action: { isExpenseInProcess = true }) {
                         Image(systemName: "plus")
                     }
                 }
+        }.sheet(isPresented: $isExpenseInProcess) {
+            ExpenseEntryView(isExpenseInProcess: $isExpenseInProcess)
         }
     }
 }
 
-struct TransactionsView_Previews: PreviewProvider {
+struct ExpensesView_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionsView()
+        ExpensesView()
     }
 }

@@ -21,7 +21,7 @@ struct SummaryView: View {
             .tabItem { Text("Summary") }
             .edgesIgnoringSafeArea(.all)
             
-            TransactionsView().tabItem { Text("Transactions") }
+            ExpensesView().tabItem { Text("Expenses") }
             
         }.edgesIgnoringSafeArea(.all)
     }
