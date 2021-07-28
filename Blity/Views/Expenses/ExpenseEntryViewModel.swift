@@ -33,7 +33,7 @@ class ExpenseEntryViewModel: ObservableObject {
     var isExpenseValid = false
     
     var expense: Expense? {
-        Expense(description: description, category: categorySelection, price: Double(price)!, currency: currencySelection, date: dateSelection)
+        return Expense(description: description, category: categorySelection, amount: Amount(price), currency: currencySelection, date: dateSelection)
     }
     
     private var subscriptions = Set<AnyCancellable>()
@@ -44,8 +44,8 @@ class ExpenseEntryViewModel: ObservableObject {
     
     private func setupPriceSubscription() {
         Publishers.CombineLatest($price, $description).sink { [weak self] price, description in
-            guard let double = Double(price) else { return }
-            self?.isExpenseValid = double >= 1 && !description.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+            self?.isExpenseValid = Amount(price).intValue >= 1 &&
+                !description.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
         }.store(in: &subscriptions)
     }
 }

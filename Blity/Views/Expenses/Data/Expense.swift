@@ -10,7 +10,7 @@ import Foundation
 struct Expense: Hashable {
     let description: String
     let category: Category
-    let price: Double
+    let amount: Amount
     let currency: Currency
     let date: Date
 }

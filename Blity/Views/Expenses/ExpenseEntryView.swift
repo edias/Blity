@@ -32,7 +32,6 @@ struct ExpenseEntryView: View {
                 }
                 
                 HStack (spacing: 2) {
-                    Text("$")
                     TextField("Price", text: $viewModel.price)
                         .keyboardType(.numberPad)
                     Spacer()
