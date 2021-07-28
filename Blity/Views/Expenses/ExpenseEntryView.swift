@@ -12,6 +12,8 @@ struct ExpenseEntryView: View {
     @Binding
     var isExpenseInProcess: Bool
     
+    var completionHandler: (Expense) -> Void
+    
     @ObservedObject
     private var viewModel = ExpenseEntryViewModel()
     
@@ -22,7 +24,7 @@ struct ExpenseEntryView: View {
             Form {
                 Picker(selection: $viewModel.categorySelection, label: Text("Category")) {
                     ForEach(viewModel.categories, id: \.self) {
-                        Text($0.displayName)
+                        Text($0.capitalFormatting)
                     }
                 }
                 
@@ -48,9 +50,14 @@ struct ExpenseEntryView: View {
             }.navigationBarTitle(Text("Add Expense"), displayMode: .inline)
             
             .toolbar {
-                Button("Save") { isExpenseInProcess = false }
-                    .foregroundColor(ColorPalette.contrastColor)
-                    .disabled(!viewModel.isExpenseValid)
+                Button("Save") {
+                    if let expense = viewModel.expense {
+                        completionHandler(expense)
+                    }
+                    isExpenseInProcess = false
+                }
+                .foregroundColor(ColorPalette.contrastColor)
+                .disabled(!viewModel.isExpenseValid)
             }
         }
     }
@@ -58,7 +65,7 @@ struct ExpenseEntryView: View {
 
 struct ExpenseEntryView_Previews: PreviewProvider {
     static var previews: some View {
-        ExpenseEntryView(isExpenseInProcess: .constant(true))
+        ExpenseEntryView(isExpenseInProcess: .constant(true), completionHandler: { _ in })
             .previewLayout(.fixed(width: 400, height: 350))
         
     }

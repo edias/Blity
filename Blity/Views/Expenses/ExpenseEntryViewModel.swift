@@ -29,6 +29,11 @@ class ExpenseEntryViewModel: ObservableObject {
     @Published
     var isExpenseValid = false
     
+    var expense: Expense? {
+        guard isExpenseValid else { return nil }
+        return Expense(category: categorySelection, price: Double(price)!, currency: currencySelection, date: dateSelection)
+    }
+    
     private var subscriptions = Set<AnyCancellable>()
     
     init() {

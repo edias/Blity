@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ExpensesView: View {
     
+    @ObservedObject
+    private var viewModel = ExpensesViewModel()
+    
     @State
     private var isExpenseInProcess = false
     
@@ -24,15 +27,29 @@ struct ExpensesView: View {
         
         NavigationView {
             
-            Text ("Items")
-                .navigationBarTitle(Text("Expenses"), displayMode: .inline)
-                .toolbar {
-                    Button(action: { isExpenseInProcess = true }) {
-                        Image(systemName: "plus")
+            List {
+                ForEach(viewModel.categories, id: \.self) { category in
+                    let header = ExpenseCategoryHeaderView(category: category)
+                    Section(header: header) {
+                        ForEach(viewModel.expensesForCategory(category), id: \.self) { expense in
+                            HStack {
+                                Text(expense.category.titleFormatting)
+                            }
+                        }
                     }
                 }
+            }
+            .listStyle(InsetGroupedListStyle())
+            .navigationBarTitle(Text("Expenses"), displayMode: .inline)
+            .toolbar {
+                Button(action: { isExpenseInProcess = true }) {
+                    Image(systemName: "plus")
+                }
+            }
         }.sheet(isPresented: $isExpenseInProcess) {
-            ExpenseEntryView(isExpenseInProcess: $isExpenseInProcess)
+            ExpenseEntryView(isExpenseInProcess: $isExpenseInProcess, completionHandler: { expense in
+                viewModel.addExpense(expense)
+            })
         }
     }
 }

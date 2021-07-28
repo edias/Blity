@@ -28,6 +28,9 @@
 		F8CA48C226AFE180005F5F19 /* ExpenseEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */; };
 		F8ED5C4D26B0163500D46720 /* ExpenseEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */; };
 		F8ED5C4F26B0164400D46720 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED5C4E26B0164400D46720 /* Currency.swift */; };
+		F8ED5C5126B105CE00D46720 /* ExpenseCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED5C5026B105CE00D46720 /* ExpenseCategoryHeaderView.swift */; };
+		F8ED5C5426B1066300D46720 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED5C5326B1066300D46720 /* Expense.swift */; };
+		F8ED5C5626B1073200D46720 /* ExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED5C5526B1073200D46720 /* ExpensesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntryView.swift; sourceTree = "<group>"; };
 		F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntryViewModel.swift; sourceTree = "<group>"; };
 		F8ED5C4E26B0164400D46720 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		F8ED5C5026B105CE00D46720 /* ExpenseCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryHeaderView.swift; sourceTree = "<group>"; };
+		F8ED5C5326B1066300D46720 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		F8ED5C5526B1073200D46720 /* ExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,11 +238,22 @@
 		F8CA48BC26AFBA43005F5F19 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
+				F8ED5C5226B1064F00D46720 /* Data */,
 				F8CA48BF26AFBA7A005F5F19 /* ExpensesView.swift */,
 				F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */,
 				F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */,
+				F8ED5C5026B105CE00D46720 /* ExpenseCategoryHeaderView.swift */,
+				F8ED5C5526B1073200D46720 /* ExpensesViewModel.swift */,
 			);
 			path = Expenses;
+			sourceTree = "<group>";
+		};
+		F8ED5C5226B1064F00D46720 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F8ED5C5326B1066300D46720 /* Expense.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,7 +390,9 @@
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
 				F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */,
 				F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */,
+				F8ED5C5626B1073200D46720 /* ExpensesViewModel.swift in Sources */,
 				F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */,
+				F8ED5C5126B105CE00D46720 /* ExpenseCategoryHeaderView.swift in Sources */,
 				F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */,
 				F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */,
 				F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */,
@@ -384,6 +403,7 @@
 				F8ED5C4F26B0164400D46720 /* Currency.swift in Sources */,
 				F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */,
 				F8CA48AC26AD6D63005F5F19 /* Splitter.swift in Sources */,
+				F8ED5C5426B1066300D46720 /* Expense.swift in Sources */,
 				F8CA48C026AFBA7A005F5F19 /* ExpensesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

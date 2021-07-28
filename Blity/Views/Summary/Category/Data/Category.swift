@@ -33,6 +33,12 @@ enum Category: String, CaseIterable {
     case travel
     case water
     
-    var displayName: String { rawValue.titleCased }
-    var iconName: String { rawValue.capitalisedWords }
+    var titleFormatting: String { rawValue.titleCased }
+    var capitalFormatting: String { rawValue.capitalisedWords }
+}
+
+
+extension Category {
+    var iconName: String { capitalFormatting + "Icon" }
+    var categoryName: String { titleFormatting }
 }

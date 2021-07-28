@@ -11,6 +11,6 @@ struct CategoryBudget {
     let category: Category
     let budget: Int
     
-    var name: String { category.displayName }
-    var iconName: String { category.iconName }
+    var name: String { category.titleFormatting }
+    var iconName: String { category.capitalFormatting }
 }
