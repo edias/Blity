@@ -33,7 +33,7 @@ struct ExpensesView: View {
                     Section(header: header) {
                         ForEach(viewModel.expensesForCategory(category), id: \.self) { expense in
                             HStack {
-                                Text(expense.category.titleFormatting)
+                                Text(expense.description)
                             }
                         }
                     }

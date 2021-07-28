@@ -22,6 +22,9 @@ struct ExpenseEntryView: View {
         NavigationView {
             
             Form {
+                
+                TextField("Description", text: $viewModel.description)
+                
                 Picker(selection: $viewModel.categorySelection, label: Text("Category")) {
                     ForEach(viewModel.categories, id: \.self) {
                         Text($0.capitalFormatting)

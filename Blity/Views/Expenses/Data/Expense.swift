@@ -8,6 +8,7 @@
 import Foundation
 
 struct Expense: Hashable {
+    let description: String
     let category: Category
     let price: Double
     let currency: Currency
