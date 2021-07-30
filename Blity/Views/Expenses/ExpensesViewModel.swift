@@ -33,6 +33,7 @@ class ExpensesViewModel: ObservableObject {
         if expensesDict[expense.category] == nil {
             expensesDict[expense.category] = []
             categories.append(expense.category)
+            categories.sort()
         }
         
         expensesDict[expense.category]?.append(expense)
