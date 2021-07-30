@@ -14,3 +14,24 @@ struct Expense: Hashable {
     let currency: Currency
     let date: Date
 }
+
+extension Expense: Persistable {
+    
+    public init(realmObject: ExpenseObject) {
+        description = realmObject.name
+        category = Category(rawValue: realmObject.category)!
+        amount = Amount(realmObject.value)
+        currency = Currency(rawValue: realmObject.currency)!
+        date = realmObject.date
+    }
+    
+    var managedObject: ExpenseObject {
+        let expenseObject = ExpenseObject()
+        expenseObject.name = description
+        expenseObject.category = category.rawValue
+        expenseObject.value = amount.description
+        expenseObject.currency = currency.rawValue
+        expenseObject.date = date
+        return expenseObject
+    }
+}

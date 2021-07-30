@@ -42,3 +42,9 @@ extension Category {
     var iconName: String { capitalFormatting + "Icon" }
     var categoryName: String { titleFormatting }
 }
+
+extension Category: Comparable {
+    static func < (lhs: Category, rhs: Category) -> Bool {
+        lhs.rawValue < lhs.rawValue
+    }
+}
