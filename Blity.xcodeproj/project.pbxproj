@@ -124,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F85FB42B26B40CBE001508FE /* EntryView */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */,
+				F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */,
+			);
+			path = EntryView;
+			sourceTree = "<group>";
+		};
 		F8CA486026AD297D005F5F19 = {
 			isa = PBXGroup;
 			children = (
@@ -258,9 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				F8ED5C5226B1064F00D46720 /* Data */,
+				F85FB42B26B40CBE001508FE /* EntryView */,
 				F8CA48BF26AFBA7A005F5F19 /* ExpensesView.swift */,
-				F8CA48C126AFE180005F5F19 /* ExpenseEntryView.swift */,
-				F8ED5C4C26B0163500D46720 /* ExpenseEntryViewModel.swift */,
 				F8ED5C5026B105CE00D46720 /* ExpenseCategoryHeaderView.swift */,
 				F8ED5C5526B1073200D46720 /* ExpensesViewModel.swift */,
 			);
