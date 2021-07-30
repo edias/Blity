@@ -16,10 +16,9 @@ class SummaryViewModel: ObservableObject {
     
     init(_ storage: Storage.Type = StorageManager.self) {
         self.storage = storage
-        loadCategoryExpenses()
     }
     
-    private func loadCategoryExpenses() {
+    func loadCategoryExpenses() {
         
         let expensesStoraged = storage.retrieve(object: ExpenseObject.self).map { Expense(realmObject: $0) }
         let expensesDict = Dictionary(grouping: expensesStoraged, by: { $0.category })

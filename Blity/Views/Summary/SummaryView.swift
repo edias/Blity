@@ -46,6 +46,7 @@ struct SummaryView: View {
                     .tabItem { Text("Summary") }
                     .onAppear(perform: {
                         resizeHeight(offSet: 170, totalHeight: geometry.size.height)
+                        viewModel.loadCategoryExpenses()
                     })
                     
                     ExpensesView()
@@ -58,7 +59,8 @@ struct SummaryView: View {
                 .frame(height: tabHeight)
             }
             
-        }.edgesIgnoringSafeArea(.all)
+        }
+        .edgesIgnoringSafeArea(.all)
     }
     
     private func resizeHeight(offSet: CGFloat = 0, totalHeight: CGFloat) {
