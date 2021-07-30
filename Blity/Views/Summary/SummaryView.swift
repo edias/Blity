@@ -45,7 +45,6 @@ struct SummaryView: View {
                     .listStyle(SidebarListStyle())
                     .tabItem { Text("Summary") }
                     .onAppear(perform: {
-                        viewModel.loadCategoryExpenses()
                         resizeHeight(offSet: 170, totalHeight: geometry.size.height)
                     })
                     

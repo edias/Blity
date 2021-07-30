@@ -45,6 +45,6 @@ extension Category {
 
 extension Category: Comparable {
     static func < (lhs: Category, rhs: Category) -> Bool {
-        lhs.rawValue < lhs.rawValue
+        lhs.rawValue < rhs.rawValue
     }
 }
