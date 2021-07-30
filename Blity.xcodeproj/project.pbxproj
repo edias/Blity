@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
 		F8CA487126AD297E005F5F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CA487026AD297E005F5F19 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
 		F8CA486E26AD297E005F5F19 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				F8CA48AE26AD79C1005F5F19 /* Header */,
 				F8CA48AD26AD798F005F5F19 /* Category */,
 				F8CA486E26AD297E005F5F19 /* SummaryView.swift */,
+				F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */,
 			);
 			path = Summary;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */,
 				F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */,
 				F8ED5C5626B1073200D46720 /* ExpensesViewModel.swift in Sources */,
+				F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */,
 				F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */,
 				F8ED5C5126B105CE00D46720 /* ExpenseCategoryHeaderView.swift in Sources */,
 				F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */,

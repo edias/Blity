@@ -19,7 +19,7 @@ class ExpensesViewModel: ObservableObject {
     
     init(storage: Storage.Type = StorageManager.self) {
         self.storage = storage
-        loadDataFromStorage()
+        loadExpenses()
     }
     
     private var expenses: [Expense] {
@@ -43,7 +43,7 @@ class ExpensesViewModel: ObservableObject {
         expensesDict[category] ?? []
     }
     
-    private func loadDataFromStorage() {
+    func loadExpenses() {
         let expenses = storage.retrieve(object: ExpenseObject.self).map { Expense(realmObject: $0) }
         let categoriesArray = expenses.map { $0.category }.sorted()
         categories = Array(Set(categoriesArray)).sorted()

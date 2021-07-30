@@ -17,37 +17,47 @@ struct SummaryCategoryView: View {
     
     var body: some View {
         
-        VStack {
+        ZStack {
             
-            HStack {
-                Image(viewModel.categoryIcon)
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                Text(viewModel.categoryName)
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                Spacer()
+            Rectangle()
+                .fill(Color.white)
+                .cornerRadius(10)
+                .shadow(color: Color.black.opacity(0.2), radius: 5)
+            
+            VStack (spacing: 15) {
+                
+                HStack {
+                    Image(viewModel.categoryIcon)
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                    Text(viewModel.categoryName)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                    Spacer()
+                }
+                .padding(.horizontal, 15)
+                .padding(.top, 15)
+                
+                SummaryCategoryBudgetView(budget: viewModel.budget, totalSpent: viewModel.totalSpent)
+                    .frame(height: 42)
+                    .padding(.horizontal, 12)
+                
+                Splitter(direction: .horizontal, color: ColorPalette.secondarySupportingColor)
+                    .padding(.horizontal, 15)
+                
+                HStack {
+                    Image(viewModel.tracking.icon)
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                    Text(viewModel.tracking.message)
+                        .foregroundColor(ColorPalette.secondarySupportingContrastColor)
+                        .font(.footnote)
+                    Spacer()
+                }
+                .padding(.horizontal, 15)
+                .padding(.bottom, 15)
             }
-            
-            SummaryCategoryBudgetView(budget: viewModel.budget, totalSpent: viewModel.totalSpent)
-                .frame(height: 42)
-            
-            Splitter(direction: .horizontal, color: ColorPalette.secondarySupportingColor)
-                .padding(.vertical, 10)
-            
-            HStack {
-                Image(viewModel.tracking.icon)
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                Text(viewModel.tracking.message)
-                    .foregroundColor(ColorPalette.secondarySupportingContrastColor)
-                    .font(.footnote)
-                Spacer()
-            }
-            
         }
-        .cornerRadius(10)
-        .padding()
     }
 }
 
@@ -60,6 +70,6 @@ struct SummaryCategoryView_Previews: PreviewProvider {
     
     static var previews: some View {
         SummaryCategoryView(expenses: expenses)
-            .previewLayout(.fixed(width: 400, height: 160))
+            .previewLayout(.fixed(width: 400, height: 200))
     }
 }

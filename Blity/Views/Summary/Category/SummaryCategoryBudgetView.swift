@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SummaryCategoryBudgetView: View {
     
+    private let padding = CGFloat(2)
+    
     var budget: Int
     var totalSpent: Int
     
@@ -25,7 +27,9 @@ struct SummaryCategoryBudgetView: View {
                 Rectangle()
                     .fill(ColorPalette.primaryColor)
                     .cornerRadius(100)
-                    .frame(width: geometry.size.width * CGFloat(totalSpent) / CGFloat(budget))
+                    .frame(width: fillWidth(width: geometry.size.width - padding,
+                                            totalSpent: totalSpent,
+                                            budget: budget))
                 
                 HStack {
                     Text("$\(totalSpent)")
@@ -52,8 +56,12 @@ struct SummaryCategoryBudgetView: View {
                 }
                 .padding(.trailing, makePercentage(15, total: geometry.size.width))
                 .padding(.vertical, 5)
-            }.padding(.all, 2)
+            }.padding(.all, padding)
         }
+    }
+    
+    private func fillWidth(width: CGFloat, totalSpent: Int, budget: Int) -> CGFloat {
+        min(width, width * CGFloat(totalSpent) / CGFloat(budget))
     }
     
     private func makePercentage(_ percentage: CGFloat, total: CGFloat) -> CGFloat {
@@ -63,7 +71,7 @@ struct SummaryCategoryBudgetView: View {
 
 struct BudgetDisplayer_Previews: PreviewProvider {
     static var previews: some View {
-        SummaryCategoryBudgetView(budget: 300, totalSpent: 110)
+        SummaryCategoryBudgetView(budget: 300, totalSpent: 270)
             .previewLayout(.fixed(width:420, height: 50))
     }
 }

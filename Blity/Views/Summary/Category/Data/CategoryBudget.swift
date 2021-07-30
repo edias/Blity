@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct CategoryBudget {
+struct CategoryBudget: Hashable {
     let category: Category
     let budget: Int
     
     var name: String { category.titleFormatting }
-    var iconName: String { category.capitalFormatting }
+    var iconName: String { category.iconName }
 }

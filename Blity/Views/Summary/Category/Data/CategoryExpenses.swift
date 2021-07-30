@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CategoryExpenses {
+struct CategoryExpenses: Hashable {
     let categoryBudget: CategoryBudget
     let totalSpent: Int
     
