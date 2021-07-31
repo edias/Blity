@@ -8,13 +8,13 @@
 import Foundation
 import Combine
 
-protocol CurrencyRateFetcher {
-    func fetchNZCurrencyRate(date: Date) -> AnyPublisher<NZCurrencyRate, Error>
+protocol CurrencyFetcher {
+    func fetchCurrencyQuotes(date: Date) -> AnyPublisher<CurrencyQuotes, Error>
 }
 
-class CurrencyNetworkServices: BaseNetworkServices, CurrencyRateFetcher {
+class CurrencyNetworkServices: BaseNetworkServices, CurrencyFetcher {
     
-    func fetchNZCurrencyRate(date: Date = Date()) -> AnyPublisher<NZCurrencyRate, Error> {
+    func fetchCurrencyQuotes(date: Date) -> AnyPublisher<CurrencyQuotes, Error> {
         get(urlString: "\(Environment.URLS.base)&from=USD&to=NZD&amount=1&format=1&date=\(date.formated)")
     }
 }

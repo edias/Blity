@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct NZRate: Decodable {
+struct Quotes: Decodable {
     let USDNZD: Double
 }
 
-struct NZCurrencyRate: Decodable {
-    let rate: NZRate
+struct CurrencyQuotes: Decodable {
+    let quotes: Quotes
 }
