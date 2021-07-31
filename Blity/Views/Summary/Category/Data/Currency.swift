@@ -9,7 +9,13 @@ import Foundation
 
 enum Currency: String, CaseIterable {
     case NZ
-    case US
+    case USA
     
     var displayName: String { rawValue }
+}
+
+extension Currency {
+    var iconName: String {
+        "\(rawValue)FlagIcon"
+    }
 }

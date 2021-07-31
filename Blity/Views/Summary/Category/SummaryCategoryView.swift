@@ -42,7 +42,7 @@ struct SummaryCategoryView: View {
                     .frame(height: 42)
                     .padding(.horizontal, 12)
                 
-                Splitter(direction: .horizontal, color: ColorPalette.secondarySupportingColor)
+                Splitter(direction: .horizontal)
                     .padding(.horizontal, 15)
                 
                 HStack {

@@ -15,7 +15,7 @@ struct Splitter: View {
     
     var direction: Direction
     
-    var color: Color
+    var color: Color = ColorPalette.secondarySupportingColor
     
     var body: some View {
         Rectangle()

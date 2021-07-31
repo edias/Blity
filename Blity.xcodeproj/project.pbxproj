@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8583AA726B5066C0067420F /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AA626B5066C0067420F /* ExpenseView.swift */; };
 		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F8583AA626B5066C0067420F /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				F8CA48BF26AFBA7A005F5F19 /* ExpensesView.swift */,
 				F8ED5C5026B105CE00D46720 /* ExpenseCategoryHeaderView.swift */,
 				F8ED5C5526B1073200D46720 /* ExpensesViewModel.swift */,
+				F8583AA626B5066C0067420F /* ExpenseView.swift */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			files = (
 				F8CA48B426AD7AEF005F5F19 /* CategoryExpenses.swift in Sources */,
 				F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */,
+				F8583AA726B5066C0067420F /* ExpenseView.swift in Sources */,
 				F8ED5C6C26B2B39600D46720 /* StorageManager.swift in Sources */,
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
 				F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */,

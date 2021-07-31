@@ -32,13 +32,7 @@ struct ExpensesView: View {
                     let header = ExpenseCategoryHeaderView(category: category)
                     Section(header: header) {
                         ForEach(viewModel.expensesForCategory(category), id: \.self) { expense in
-                            HStack {
-                                Text(expense.description)
-                                    .font(.subheadline)
-                                Spacer()
-                                Text(expense.amount.formattedValue)
-                                    .font(.footnote)
-                            }
+                            ExpenseView(expense: expense)
                         }
                     }
                 }
