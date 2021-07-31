@@ -19,11 +19,11 @@ struct BlityApp: App {
         
         let today = Date()
         
-        guard CurrencyStorageSettings.shared.quoteForDate(today) == nil else { return }
-        
+        guard AppSettings.shared.quoteForDate(today) == nil else { return }
+
         cancellable = currencyFetcher.fetchCurrencyQuotes(date: today).sink { _ in }
             receiveValue: { currencyQuotes in
-                CurrencyStorageSettings.shared.storeQuote(withDate: today, quote: currencyQuotes.quotes.USDNZD)
+                AppSettings.shared.quoteWithDate = (today, currencyQuotes.quotes.USDNZD)
             }
     }
     

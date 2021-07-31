@@ -14,7 +14,7 @@
 		F8583AB226B541420067420F /* CurrencyNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AB126B541420067420F /* CurrencyNetworkServices.swift */; };
 		F8583AB526B54B740067420F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AB426B54B740067420F /* Environment.swift */; };
 		F8583ABC26B54C320067420F /* NZCurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ABB26B54C320067420F /* NZCurrencyRate.swift */; };
-		F8583ABE26B55BD70067420F /* CurrencyStorageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ABD26B55BD70067420F /* CurrencyStorageSettings.swift */; };
+		F8583ABE26B55BD70067420F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ABD26B55BD70067420F /* AppSettings.swift */; };
 		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
@@ -74,7 +74,7 @@
 		F8583AB126B541420067420F /* CurrencyNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyNetworkServices.swift; sourceTree = "<group>"; };
 		F8583AB426B54B740067420F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		F8583ABB26B54C320067420F /* NZCurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZCurrencyRate.swift; sourceTree = "<group>"; };
-		F8583ABD26B55BD70067420F /* CurrencyStorageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyStorageSettings.swift; sourceTree = "<group>"; };
+		F8583ABD26B55BD70067420F /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -168,12 +168,12 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		F8583AB326B54B610067420F /* Settings */ = {
+		F8583AB326B54B610067420F /* Environments */ = {
 			isa = PBXGroup;
 			children = (
 				F8583AB426B54B740067420F /* Environment.swift */,
 			);
-			path = Settings;
+			path = Environments;
 			sourceTree = "<group>";
 		};
 		F8583AB626B54B820067420F /* Services */ = {
@@ -196,7 +196,7 @@
 		F8583AB826B54BAA0067420F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F8583AB326B54B610067420F /* Settings */,
+				F8583AB326B54B610067420F /* Environments */,
 				F8583AB926B54BC00067420F /* UI */,
 				F8ED5C5926B181B500D46720 /* Utils */,
 				F8CA48B926ADA922005F5F19 /* Extensions */,
@@ -374,6 +374,7 @@
 		F8ED5C5926B181B500D46720 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F8583ABD26B55BD70067420F /* AppSettings.swift */,
 				F8ED5C5A26B181C900D46720 /* AmountFormatter.swift */,
 			);
 			path = Utils;
@@ -385,7 +386,6 @@
 				F8ED5C6726B248AD00D46720 /* ExpenseObject.swift */,
 				F8ED5C6926B248FB00D46720 /* Persistable.swift */,
 				F8ED5C6B26B2B39600D46720 /* StorageManager.swift */,
-				F8583ABD26B55BD70067420F /* CurrencyStorageSettings.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -533,7 +533,7 @@
 				F8583AA726B5066C0067420F /* ExpenseView.swift in Sources */,
 				F8ED5C6C26B2B39600D46720 /* StorageManager.swift in Sources */,
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
-				F8583ABE26B55BD70067420F /* CurrencyStorageSettings.swift in Sources */,
+				F8583ABE26B55BD70067420F /* AppSettings.swift in Sources */,
 				F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */,
 				F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */,
 				F8ED5C5626B1073200D46720 /* ExpensesViewModel.swift in Sources */,
