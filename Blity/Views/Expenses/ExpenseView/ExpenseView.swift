@@ -30,10 +30,10 @@ struct ExpenseView: View {
 struct ExpenseView_Previews: PreviewProvider {
     
     static var expense = Expense(description: "McDonalds",
-                          category: .food,
-                          amount: Amount("20.00"),
-                          currency: .NZ,
-                          date: Date())
+                                 category: .food,
+                                 amount: Amount("20.00"),
+                                 currency: .NZ,
+                                 date: Date())
     
     static var previews: some View {
         ExpenseView(expense: expense)
