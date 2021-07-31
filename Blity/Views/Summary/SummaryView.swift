@@ -32,10 +32,21 @@ struct SummaryView: View {
                 Spacer()
             }
             
+            VStack {
+                Text(viewModel.totalExpenses.formattedValue)
+                    .font(.title)
+                    .foregroundColor(ColorPalette.contrastColor)
+                    .padding(.top, 80)
+                Text("spent this month")
+                    .font(.subheadline)
+                    .foregroundColor(ColorPalette.contrastColor)
+                Spacer()
+            }
+            
             GeometryReader { geometry in
-                
+
                 TabView {
-                    
+
                     List {
                         ForEach(viewModel.categoryExpenses, id: \.self) { expenses in
                             SummaryCategoryView(expenses: expenses)
@@ -48,7 +59,7 @@ struct SummaryView: View {
                         resizeHeight(offSet: 170, totalHeight: geometry.size.height)
                         viewModel.loadCategoryExpenses()
                     })
-                    
+
                     ExpensesView()
                         .tabItem { Text("Expenses") }
                         .onAppear(perform: {
@@ -59,8 +70,7 @@ struct SummaryView: View {
                 .frame(height: tabHeight)
             }
             
-        }
-        .edgesIgnoringSafeArea(.all)
+        }.edgesIgnoringSafeArea(.all)
     }
     
     private func resizeHeight(offSet: CGFloat = 0, totalHeight: CGFloat) {

@@ -10,6 +10,9 @@ import Foundation
 class SummaryViewModel: ObservableObject {
     
     @Published
+    private (set) var totalExpenses: Amount = Amount("0.00")
+    
+    @Published
     private (set) var categoryExpenses: [CategoryExpenses] = []
     
     private var storage: Storage.Type
@@ -28,5 +31,8 @@ class SummaryViewModel: ObservableObject {
             let categoryBudget = CategoryBudget(category: category, budget: 700)
             return CategoryExpenses(categoryBudget: categoryBudget, totalSpent: totalSpent)
         }.sorted { $0.categoryBudget.category < $1.categoryBudget.category }
+        
+        let total = categoryExpenses.reduce(0, { $0 + $1.totalSpent })
+        totalExpenses = Amount("\(total)")
     }
 }
