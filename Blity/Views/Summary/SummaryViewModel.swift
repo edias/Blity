@@ -28,7 +28,8 @@ class SummaryViewModel: ObservableObject {
         
         categoryExpenses = expensesDict.map { (category, expenses) in
             let totalSpent = expenses.reduce(0, { $0 + $1.amount.intValue })
-            let categoryBudget = CategoryBudget(category: category, budget: 700)
+            let budget = Int.random(in: 100..<1000)
+            let categoryBudget = CategoryBudget(category: category, budget: budget)
             return CategoryExpenses(categoryBudget: categoryBudget, totalSpent: totalSpent)
         }.sorted { $0.categoryBudget.category < $1.categoryBudget.category }
         
