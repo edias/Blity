@@ -52,14 +52,23 @@ struct ExpenseEntryView: View {
             }.navigationBarTitle(Text("Add Expense"), displayMode: .inline)
             
             .toolbar {
-                Button("Save") {
-                    if let expense = viewModel.expense {
-                        completionHandler(expense)
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Close") {
+                        isExpenseInProcess = false
                     }
-                    isExpenseInProcess = false
+                    .foregroundColor(ColorPalette.contrastColor)
                 }
-                .foregroundColor(ColorPalette.contrastColor)
-                .disabled(!viewModel.isExpenseValid)
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Save") {
+                        if let expense = viewModel.expense {
+                            completionHandler(expense)
+                        }
+                        isExpenseInProcess = false
+                    }
+                    .foregroundColor(ColorPalette.contrastColor)
+                    .disabled(!viewModel.isExpenseValid)
+                }
             }
         }
     }
