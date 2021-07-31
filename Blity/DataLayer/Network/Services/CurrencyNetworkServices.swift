@@ -15,6 +15,6 @@ protocol CurrencyFetcher {
 class CurrencyNetworkServices: BaseNetworkServices, CurrencyFetcher {
     
     func fetchCurrencyQuotes(date: Date) -> AnyPublisher<CurrencyQuotes, Error> {
-        get(urlString: "\(Environment.URLS.base)&from=USD&to=NZD&amount=1&format=1&date=\(date.formated)")
+        get(urlString: "\(Environment.URLS.base)&from=USD&to=NZD&amount=1&format=1&date=\(date.formatted)")
     }
 }

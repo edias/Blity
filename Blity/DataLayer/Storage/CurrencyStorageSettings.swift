@@ -30,7 +30,7 @@ class CurrencyStorageSettings: CurrencyStorage {
         
         guard quoteForDate(date) == nil else { return }
         
-        let dateString = date.formated
+        let dateString = date.formatted
         
         if var dict = storedDict {
             dict[dateString] = quote
@@ -42,7 +42,7 @@ class CurrencyStorageSettings: CurrencyStorage {
     
     func quoteForDate(_ date: Date) -> Double? {
         guard let dict = storedDict else { return nil }
-        return dict[date.formated]
+        return dict[date.formatted]
     }
     
     private var storedDict: [String: Double]? {

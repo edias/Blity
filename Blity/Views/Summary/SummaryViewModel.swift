@@ -50,7 +50,7 @@ extension Date {
         return calendarDate.month!
     }
     
-    var formated: String {
+    var formatted: String {
         let calendarDate = Calendar.current.dateComponents([.day, .month, .year], from: self)
         return "\(calendarDate.year!)-\(calendarDate.month!)-\(calendarDate.day!)"
     }
