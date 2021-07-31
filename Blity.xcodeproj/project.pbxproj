@@ -126,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8583AA826B522F40067420F /* ExpenseView */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AA626B5066C0067420F /* ExpenseView.swift */,
+			);
+			path = ExpenseView;
+			sourceTree = "<group>";
+		};
 		F85FB42B26B40CBE001508FE /* EntryView */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,11 +277,11 @@
 			isa = PBXGroup;
 			children = (
 				F8ED5C5226B1064F00D46720 /* Data */,
+				F8583AA826B522F40067420F /* ExpenseView */,
 				F85FB42B26B40CBE001508FE /* EntryView */,
 				F8CA48BF26AFBA7A005F5F19 /* ExpensesView.swift */,
 				F8ED5C5026B105CE00D46720 /* ExpenseCategoryHeaderView.swift */,
 				F8ED5C5526B1073200D46720 /* ExpensesViewModel.swift */,
-				F8583AA626B5066C0067420F /* ExpenseView.swift */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";

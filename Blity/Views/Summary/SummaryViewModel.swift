@@ -23,8 +23,7 @@ class SummaryViewModel: ObservableObject {
     
     func loadCategoryExpenses() {
         
-        let expensesStoraged = storage.retrieve(object: ExpenseObject.self).map { Expense(realmObject: $0) }
-        let expensesDict = Dictionary(grouping: expensesStoraged, by: { $0.category })
+        let expensesDict = Dictionary(grouping: monthExpenses, by: { $0.category })
         
         categoryExpenses = expensesDict.map { (category, expenses) in
             let totalSpent = expenses.reduce(0, { $0 + $1.amount.intValue })
@@ -35,5 +34,19 @@ class SummaryViewModel: ObservableObject {
         
         let total = categoryExpenses.reduce(0, { $0 + $1.totalSpent })
         totalExpenses = Amount("\(total)")
+    }
+    
+    private var monthExpenses: [Expense] {
+        let today = Date()
+        return storage.retrieve(object: ExpenseObject.self)
+            .filter { $0.date.month == today.month }
+            .map { Expense(realmObject: $0) }
+    }
+}
+
+private extension Date {
+    var month: Int {
+        let calendarDate = Calendar.current.dateComponents([.month], from: self)
+        return calendarDate.month!
     }
 }
