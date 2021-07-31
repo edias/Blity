@@ -44,9 +44,14 @@ class SummaryViewModel: ObservableObject {
     }
 }
 
-private extension Date {
+extension Date {
     var month: Int {
         let calendarDate = Calendar.current.dateComponents([.month], from: self)
         return calendarDate.month!
+    }
+    
+    var formated: String {
+        let calendarDate = Calendar.current.dateComponents([.day, .month, .year], from: self)
+        return "\(calendarDate.year!)-\(calendarDate.month!)-\(calendarDate.day!)"
     }
 }

@@ -12,6 +12,7 @@ import RealmSwift
 protocol Storage {
     static func store(_ object: Object)
     static func retrieve<T:Object>(object objectType: T.Type) -> Results<T>
+    static func deleteAll()
 }
 
 class StorageManager: Storage {
@@ -34,5 +35,11 @@ class StorageManager: Storage {
     
     static func retrieve<T:Object>(object objectType: T.Type) -> Results<T> {
         realm.objects(objectType)
+    }
+    
+    static func deleteAll() {
+        try! realm.write {
+            realm.deleteAll()
+        }
     }
 }

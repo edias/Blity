@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F8583AA726B5066C0067420F /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AA626B5066C0067420F /* ExpenseView.swift */; };
+		F8583AAE26B53F9B0067420F /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AAB26B53F9B0067420F /* NetworkServices.swift */; };
+		F8583AAF26B53F9B0067420F /* NetworkStatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AAC26B53F9B0067420F /* NetworkStatusHandler.swift */; };
+		F8583AB026B53F9B0067420F /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AAD26B53F9B0067420F /* Serializer.swift */; };
+		F8583AB226B541420067420F /* CurrencyNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AB126B541420067420F /* CurrencyNetworkServices.swift */; };
+		F8583AB526B54B740067420F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AB426B54B740067420F /* Environment.swift */; };
+		F8583ABC26B54C320067420F /* NZCurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ABB26B54C320067420F /* NZCurrencyRate.swift */; };
 		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
@@ -61,6 +67,12 @@
 
 /* Begin PBXFileReference section */
 		F8583AA626B5066C0067420F /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		F8583AAB26B53F9B0067420F /* NetworkServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		F8583AAC26B53F9B0067420F /* NetworkStatusHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatusHandler.swift; sourceTree = "<group>"; };
+		F8583AAD26B53F9B0067420F /* Serializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		F8583AB126B541420067420F /* CurrencyNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyNetworkServices.swift; sourceTree = "<group>"; };
+		F8583AB426B54B740067420F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F8583ABB26B54C320067420F /* NZCurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZCurrencyRate.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -134,6 +146,78 @@
 			path = ExpenseView;
 			sourceTree = "<group>";
 		};
+		F8583AA926B53F9B0067420F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F8583ABA26B54C270067420F /* Data */,
+				F8583AB626B54B820067420F /* Services */,
+				F8583AAA26B53F9B0067420F /* Core */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F8583AAA26B53F9B0067420F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AAB26B53F9B0067420F /* NetworkServices.swift */,
+				F8583AAC26B53F9B0067420F /* NetworkStatusHandler.swift */,
+				F8583AAD26B53F9B0067420F /* Serializer.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F8583AB326B54B610067420F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AB426B54B740067420F /* Environment.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F8583AB626B54B820067420F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AB126B541420067420F /* CurrencyNetworkServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F8583AB726B54B8A0067420F /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AA926B53F9B0067420F /* Network */,
+				F8ED5C6626B2489B00D46720 /* Storage */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		F8583AB826B54BAA0067420F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AB326B54B610067420F /* Settings */,
+				F8583AB926B54BC00067420F /* UI */,
+				F8ED5C5926B181B500D46720 /* Utils */,
+				F8CA48B926ADA922005F5F19 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F8583AB926B54BC00067420F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F8CA489D26AD38A8005F5F19 /* ColorPalette.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F8583ABA26B54C270067420F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F8583ABB26B54C320067420F /* NZCurrencyRate.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		F85FB42B26B40CBE001508FE /* EntryView */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,9 +250,8 @@
 		F8CA486B26AD297E005F5F19 /* Blity */ = {
 			isa = PBXGroup;
 			children = (
-				F8ED5C6626B2489B00D46720 /* Storage */,
-				F8ED5C5926B181B500D46720 /* Utils */,
-				F8CA48B926ADA922005F5F19 /* Extensions */,
+				F8583AB826B54BAA0067420F /* Shared */,
+				F8583AB726B54B8A0067420F /* DataLayer */,
 				F8CA489F26AD3A10005F5F19 /* Views */,
 				F8CA486C26AD297E005F5F19 /* BlityApp.swift */,
 				F8CA487026AD297E005F5F19 /* Assets.xcassets */,
@@ -207,7 +290,6 @@
 		F8CA489F26AD3A10005F5F19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F8CA48A126AD3A31005F5F19 /* Shared */,
 				F8CA48A026AD3A16005F5F19 /* Summary */,
 				F8CA48BC26AFBA43005F5F19 /* Expenses */,
 			);
@@ -223,14 +305,6 @@
 				F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */,
 			);
 			path = Summary;
-			sourceTree = "<group>";
-		};
-		F8CA48A126AD3A31005F5F19 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				F8CA489D26AD38A8005F5F19 /* ColorPalette.swift */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		F8CA48AD26AD798F005F5F19 /* Category */ = {
@@ -450,7 +524,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CA48B426AD7AEF005F5F19 /* CategoryExpenses.swift in Sources */,
+				F8583AB526B54B740067420F /* Environment.swift in Sources */,
 				F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */,
+				F8583AAF26B53F9B0067420F /* NetworkStatusHandler.swift in Sources */,
 				F8583AA726B5066C0067420F /* ExpenseView.swift in Sources */,
 				F8ED5C6C26B2B39600D46720 /* StorageManager.swift in Sources */,
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
@@ -467,7 +543,10 @@
 				F8CA48C226AFE180005F5F19 /* ExpenseEntryView.swift in Sources */,
 				F8ED5C4D26B0163500D46720 /* ExpenseEntryViewModel.swift in Sources */,
 				F8CA48AA26AD43DD005F5F19 /* SummaryCategoryBudgetView.swift in Sources */,
+				F8583AB026B53F9B0067420F /* Serializer.swift in Sources */,
+				F8583AAE26B53F9B0067420F /* NetworkServices.swift in Sources */,
 				F8ED5C5B26B181C900D46720 /* AmountFormatter.swift in Sources */,
+				F8583ABC26B54C320067420F /* NZCurrencyRate.swift in Sources */,
 				F8ED5C6826B248AD00D46720 /* ExpenseObject.swift in Sources */,
 				F8ED5C4F26B0164400D46720 /* Currency.swift in Sources */,
 				F8ED5C6A26B248FB00D46720 /* Persistable.swift in Sources */,
@@ -475,6 +554,7 @@
 				F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */,
 				F8CA48AC26AD6D63005F5F19 /* Splitter.swift in Sources */,
 				F8ED5C5426B1066300D46720 /* Expense.swift in Sources */,
+				F8583AB226B541420067420F /* CurrencyNetworkServices.swift in Sources */,
 				F8CA48C026AFBA7A005F5F19 /* ExpensesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
