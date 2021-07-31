@@ -18,7 +18,7 @@ class AmountFormatter {
         return formatter
     }()
     
-    static func stringFromValue(_ value: NSDecimalNumber) -> String {
-        formatter.string(from: value) ?? ""
+    static func stringFromAmount(_ amount: Amount) -> String {
+        formatter.string(from: amount.value) ?? ""
     }
 }

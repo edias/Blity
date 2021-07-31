@@ -15,7 +15,7 @@ struct Amount: Hashable, CustomStringConvertible {
     
     var value: NSDecimalNumber
     
-    var formattedValue: String { AmountFormatter.stringFromValue(value) }
+    var formattedValue: String { AmountFormatter.stringFromAmount(self) }
     
     var intValue: Int { Int(truncating: value) }
     
