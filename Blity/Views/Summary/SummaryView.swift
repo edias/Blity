@@ -54,14 +54,20 @@ struct SummaryView: View {
                     }
                     .offset(y: -25)
                     .listStyle(SidebarListStyle())
-                    .tabItem { Text("Summary") }
+                    .tabItem {
+                        Image("DashboardIcon")
+                        Text("Summary")
+                    }
                     .onAppear(perform: {
                         resizeHeight(offSet: 170, totalHeight: geometry.size.height)
                         viewModel.loadCategoryExpenses()
                     })
 
                     ExpensesView()
-                        .tabItem { Text("Expenses") }
+                        .tabItem {
+                            Image("MoneyIcon")
+                            Text("Expenses")
+                        }
                         .onAppear(perform: {
                             resizeHeight(totalHeight: geometry.size.height)
                         })
