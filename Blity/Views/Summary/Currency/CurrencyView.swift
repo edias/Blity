@@ -13,7 +13,7 @@ struct CurrencyView: View {
     var isDisplayingCurrencySelection: Bool
     
     @Binding
-    var selectedCurrency: Currency?
+    var selectedCurrency: Currency
     
     var body: some View {
         

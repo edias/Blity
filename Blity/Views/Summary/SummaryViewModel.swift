@@ -14,21 +14,25 @@ class SummaryViewModel: ObservableObject {
     private (set) var totalExpenses: Amount = Amount("0.00")
     
     @Published
-    private (set) var categoryExpenses: [CategoryExpenses] = []
+    private (set) var categoryExpenses: [CategoryExpenses] = [] {
+        didSet {
+            calculateTotalExpenses()
+        }
+    }
     
     @Published
-    var defaultCurrency: Currency?
+    var selectedCurrency: Currency
     
-    private var cancellable: AnyCancellable?
+    private var subscriptions = Set<AnyCancellable>()
     
     private let storage: Storage.Type
     
     private var settings: Settings
-    
+        
     init(_ storage: Storage.Type = StorageManager.self, settings: Settings = AppSettings.shared) {
         self.storage = storage
         self.settings = settings
-        self.defaultCurrency = settings.defaultCurrency
+        self.selectedCurrency = settings.selectedCurrency
         setupCurrencySubscription()
     }
     
@@ -37,14 +41,11 @@ class SummaryViewModel: ObservableObject {
         let expensesDict = Dictionary(grouping: monthExpenses, by: { $0.category })
         
         categoryExpenses = expensesDict.map { (category, expenses) in
-            let totalSpent = expenses.reduce(0, { $0 + $1.amount.intValue })
+            let totalSpent = expenses.reduce(0, { $0 + $1.amount.toSelectedCurrency.intValue })
             let budget = Int.random(in: 100..<1000)
             let categoryBudget = CategoryBudget(category: category, budget: budget)
             return CategoryExpenses(categoryBudget: categoryBudget, totalSpent: totalSpent)
         }.sorted { $0.categoryBudget.category < $1.categoryBudget.category }
-        
-        let total = categoryExpenses.reduce(0, { $0 + $1.totalSpent })
-        totalExpenses = Amount("\(total)")
     }
     
     private var monthExpenses: [Expense] {
@@ -55,10 +56,15 @@ class SummaryViewModel: ObservableObject {
     }
     
     private func setupCurrencySubscription() {
-        cancellable = $defaultCurrency.sink { _ in }
-            receiveValue: { [weak self] currency in
-                self?.settings.defaultCurrency = currency
-            }
+        $selectedCurrency.dropFirst().sink { currency in
+            self.settings.selectedCurrency = currency
+            self.loadCategoryExpenses()
+        }.store(in: &subscriptions)
+    }
+    
+    private func calculateTotalExpenses() {
+        let total = categoryExpenses.reduce(0, { $0 + $1.totalSpent })
+        self.totalExpenses = Amount("\(String(describing: total))", currency: settings.selectedCurrency)
     }
 }
 

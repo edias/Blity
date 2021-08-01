@@ -22,7 +22,6 @@ class AppSettingsInitializer {
     
     func initialize() {
         fetchAndStoreCurrencyRates()
-        initializeDefaultCurrency()
     }
     
     private func fetchAndStoreCurrencyRates() {
@@ -34,10 +33,5 @@ class AppSettingsInitializer {
             receiveValue: { [weak self] currencyQuotes in
                 self?.settings.quoteWithDate = (today, currencyQuotes.quotes.USDNZD)
             }
-    }
-    
-    func initializeDefaultCurrency() {
-        guard settings.defaultCurrency == nil else { return }
-        settings.defaultCurrency = .NZ
     }
 }

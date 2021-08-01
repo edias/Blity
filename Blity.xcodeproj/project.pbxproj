@@ -19,6 +19,7 @@
 		F8583AC326B691670067420F /* AppSettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC226B691670067420F /* AppSettingsInitializer.swift */; };
 		F8583AC626B6A88C0067420F /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC526B6A88C0067420F /* CurrencyView.swift */; };
 		F8583AC826B6A8A70067420F /* CheckmarkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */; };
+		F8583ACA26B6C18A0067420F /* AmountConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC926B6C18A0067420F /* AmountConverter.swift */; };
 		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
@@ -83,6 +84,7 @@
 		F8583AC226B691670067420F /* AppSettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsInitializer.swift; sourceTree = "<group>"; };
 		F8583AC526B6A88C0067420F /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 		F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkModifier.swift; sourceTree = "<group>"; };
+		F8583AC926B6C18A0067420F /* AmountConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConverter.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				F8ED5C5A26B181C900D46720 /* AmountFormatter.swift */,
+				F8583AC926B6C18A0067420F /* AmountConverter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				F8583AB026B53F9B0067420F /* Serializer.swift in Sources */,
 				F8583AAE26B53F9B0067420F /* NetworkServices.swift in Sources */,
 				F8ED5C5B26B181C900D46720 /* AmountFormatter.swift in Sources */,
+				F8583ACA26B6C18A0067420F /* AmountConverter.swift in Sources */,
 				F8583ABC26B54C320067420F /* NZCurrencyRate.swift in Sources */,
 				F8ED5C6826B248AD00D46720 /* ExpenseObject.swift in Sources */,
 				F8ED5C4F26B0164400D46720 /* Currency.swift in Sources */,

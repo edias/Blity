@@ -18,7 +18,12 @@ class AmountFormatter {
         return formatter
     }()
     
-    static func stringFromAmount(_ amount: Amount) -> String {
-        formatter.string(from: amount.value) ?? ""
+    static func stringFromAmount(_ amount: Amount, currency: Currency? = nil) -> String {
+        if let currency = currency {
+            formatter.positivePrefix = "$\(currency.rawValue) "
+        } else {
+            formatter.positivePrefix = "$"
+        }
+        return formatter.string(from: amount.value) ?? ""
     }
 }

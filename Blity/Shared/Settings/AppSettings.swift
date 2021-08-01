@@ -10,14 +10,16 @@ import Foundation
 protocol Settings {
     var quoteWithDate: (date: Date, quote: Double)? { get set }
     func quoteForDate(_ date: Date) -> Double?
-    var defaultCurrency: Currency? { get set }
+    var selectedCurrency: Currency { get set }
 }
 
 class AppSettings: Settings {
     
+    private let DefaultCurrency = Currency.NZ
+    
     private enum StoringKey: String {
         case quote
-        case defaultCurrency
+        case selectedCurrency
     }
     
     private let userDefaults: UserDefaults
@@ -52,17 +54,15 @@ class AppSettings: Settings {
         return dict[date.formatted]
     }
     
-    var defaultCurrency: Currency? {
+    var selectedCurrency: Currency {
         set {
-            guard let newValue = newValue else { return }
-            userDefaults.setValue(newValue.rawValue, forKey: StoringKey.defaultCurrency.rawValue)
+            userDefaults.setValue(newValue.rawValue, forKey: StoringKey.selectedCurrency.rawValue)
         }
         get {
-            guard let rawValue = userDefaults.string(forKey: StoringKey.defaultCurrency.rawValue) else { return nil }
-            return Currency(rawValue: rawValue)
+            let rawValue = userDefaults.string(forKey: StoringKey.selectedCurrency.rawValue) ?? DefaultCurrency.rawValue
+            return Currency(rawValue: rawValue)!
         }
     }
-
     
     private var storedDict: [String: Double]? {
         userDefaults.dictionary(forKey: StoringKey.quote.rawValue) as? [String: Double]

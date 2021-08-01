@@ -15,12 +15,18 @@ struct Amount: Hashable, CustomStringConvertible {
     
     var value: NSDecimalNumber
     
-    var formattedValue: String { AmountFormatter.stringFromAmount(self) }
-    
     var intValue: Int { Int(truncating: value) }
+    
+    var doubleValue: Double { Double(truncating: value) }
     
     init(_ string: String, currency: Currency = .NZ) {
         self.value = NSDecimalNumber(string: string)
         self.currency = currency
     }
+}
+
+extension Amount {
+    var formattedValue: String { AmountFormatter.stringFromAmount(self) }
+    var formattedValueWithCurrency: String { AmountFormatter.stringFromAmount(self, currency: currency) }
+    var toSelectedCurrency: Amount { AmountConverter.convertToSelectedCurrency(self) }
 }

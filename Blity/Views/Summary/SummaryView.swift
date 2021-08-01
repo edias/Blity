@@ -41,7 +41,7 @@ struct SummaryView: View {
             }
             
             VStack {
-                Text(viewModel.totalExpenses.formattedValue)
+                Text(viewModel.totalExpenses.formattedValueWithCurrency)
                     .font(.title)
                     .foregroundColor(ColorPalette.contrastColor)
                     .padding(.top, 80)
@@ -87,7 +87,7 @@ struct SummaryView: View {
         }
         .sheet(isPresented: $isDisplayingCurrencySelection) {
             CurrencyView(isDisplayingCurrencySelection: $isDisplayingCurrencySelection,
-                         selectedCurrency: $viewModel.defaultCurrency)
+                         selectedCurrency: $viewModel.selectedCurrency)
         }.edgesIgnoringSafeArea(.all)
     }
     
