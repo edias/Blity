@@ -43,7 +43,7 @@ struct SummaryCategoryBudgetView: View {
                     Text("$\(budget)")
                         .font(.footnote)
                         .fontWeight(.regular)
-                        .frame(maxWidth: makePercentage(15, total: geometry.size.width), alignment: .center)
+                        .frame(maxWidth: makePercentage(18, total: geometry.size.width), alignment: .center)
                         .foregroundColor(ColorPalette.primarySupportingContrastColor)
                     
                 }
@@ -54,7 +54,7 @@ struct SummaryCategoryBudgetView: View {
                     Splitter(direction: .vertical, color: ColorPalette.primarySupportingContrastColor)
                     
                 }
-                .padding(.trailing, makePercentage(15, total: geometry.size.width))
+                .padding(.trailing, makePercentage(18, total: geometry.size.width))
                 .padding(.vertical, 5)
             }.padding(.all, padding)
         }
@@ -71,7 +71,7 @@ struct SummaryCategoryBudgetView: View {
 
 struct BudgetDisplayer_Previews: PreviewProvider {
     static var previews: some View {
-        SummaryCategoryBudgetView(budget: 300, totalSpent: 270)
+        SummaryCategoryBudgetView(budget: 1300, totalSpent: 270)
             .previewLayout(.fixed(width:420, height: 50))
     }
 }

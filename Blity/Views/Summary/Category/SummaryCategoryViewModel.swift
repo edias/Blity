@@ -27,9 +27,9 @@ struct SummaryCategoryViewModel {
         switch percentageSpent {
             case (0...77):
                 return (message: "Your \(categoryName.lowercased()) spending is still on track", icon: "CheckIcon")
-            case (78...85):
+            case (78...82):
                 return (message:"You are almost exceeding your budget", icon: "WarningIcon")
-            case (86...99):
+            case (83...99):
                 return (message: "You are very close to reach your budget", icon: "WarningIcon")
             default:
                 return (message: "You excedded your budget", icon: "ErrorIcon")
