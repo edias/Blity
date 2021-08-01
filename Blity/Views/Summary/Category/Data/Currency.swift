@@ -9,7 +9,7 @@ import Foundation
 
 enum Currency: String, CaseIterable {
     case NZ
-    case USA
+    case US
     
     var displayName: String { rawValue }
 }
