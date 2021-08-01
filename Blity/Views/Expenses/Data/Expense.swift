@@ -11,7 +11,6 @@ struct Expense: Hashable {
     let description: String
     let category: Category
     let amount: Amount
-    let currency: Currency
     let date: Date
 }
 
@@ -20,8 +19,8 @@ extension Expense: Persistable {
     public init(realmObject: ExpenseObject) {
         description = realmObject.name
         category = Category(rawValue: realmObject.category)!
-        amount = Amount(realmObject.value)
-        currency = Currency(rawValue: realmObject.currency)!
+        let currency = Currency(rawValue: realmObject.currency)
+        amount = Amount(realmObject.value, currency: currency!)
         date = realmObject.date
     }
     
@@ -30,7 +29,7 @@ extension Expense: Persistable {
         expenseObject.name = description
         expenseObject.category = category.rawValue
         expenseObject.value = amount.description
-        expenseObject.currency = currency.rawValue
+        expenseObject.currency = amount.currency.rawValue
         expenseObject.date = date
         return expenseObject
     }
