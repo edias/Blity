@@ -15,6 +15,10 @@
 		F8583AB526B54B740067420F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AB426B54B740067420F /* Environment.swift */; };
 		F8583ABC26B54C320067420F /* NZCurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ABB26B54C320067420F /* NZCurrencyRate.swift */; };
 		F8583ABE26B55BD70067420F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ABD26B55BD70067420F /* AppSettings.swift */; };
+		F8583AC026B6388F0067420F /* SettingsIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ABF26B6388F0067420F /* SettingsIconView.swift */; };
+		F8583AC326B691670067420F /* AppSettingsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC226B691670067420F /* AppSettingsInitializer.swift */; };
+		F8583AC626B6A88C0067420F /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC526B6A88C0067420F /* CurrencyView.swift */; };
+		F8583AC826B6A8A70067420F /* CheckmarkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */; };
 		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
@@ -75,6 +79,10 @@
 		F8583AB426B54B740067420F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		F8583ABB26B54C320067420F /* NZCurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZCurrencyRate.swift; sourceTree = "<group>"; };
 		F8583ABD26B55BD70067420F /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		F8583ABF26B6388F0067420F /* SettingsIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIconView.swift; sourceTree = "<group>"; };
+		F8583AC226B691670067420F /* AppSettingsInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsInitializer.swift; sourceTree = "<group>"; };
+		F8583AC526B6A88C0067420F /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkModifier.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -196,6 +204,7 @@
 		F8583AB826B54BAA0067420F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F8583AC126B6915B0067420F /* Settings */,
 				F8583AB326B54B610067420F /* Environments */,
 				F8583AB926B54BC00067420F /* UI */,
 				F8ED5C5926B181B500D46720 /* Utils */,
@@ -218,6 +227,24 @@
 				F8583ABB26B54C320067420F /* NZCurrencyRate.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F8583AC126B6915B0067420F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F8583ABD26B55BD70067420F /* AppSettings.swift */,
+				F8583AC226B691670067420F /* AppSettingsInitializer.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F8583AC426B6A8740067420F /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AC526B6A88C0067420F /* CurrencyView.swift */,
+				F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */,
+			);
+			path = Currency;
 			sourceTree = "<group>";
 		};
 		F85FB42B26B40CBE001508FE /* EntryView */ = {
@@ -301,6 +328,7 @@
 		F8CA48A026AD3A16005F5F19 /* Summary */ = {
 			isa = PBXGroup;
 			children = (
+				F8583AC426B6A8740067420F /* Currency */,
 				F8CA48AE26AD79C1005F5F19 /* Header */,
 				F8CA48AD26AD798F005F5F19 /* Category */,
 				F8CA486E26AD297E005F5F19 /* SummaryView.swift */,
@@ -326,6 +354,7 @@
 			children = (
 				F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */,
 				F8CA489B26AD3780005F5F19 /* SummaryViewHeader.swift */,
+				F8583ABF26B6388F0067420F /* SettingsIconView.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -374,7 +403,6 @@
 		F8ED5C5926B181B500D46720 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F8583ABD26B55BD70067420F /* AppSettings.swift */,
 				F8ED5C5A26B181C900D46720 /* AmountFormatter.swift */,
 			);
 			path = Utils;
@@ -530,6 +558,7 @@
 				F8583AB526B54B740067420F /* Environment.swift in Sources */,
 				F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */,
 				F8583AAF26B53F9B0067420F /* NetworkStatusHandler.swift in Sources */,
+				F8583AC626B6A88C0067420F /* CurrencyView.swift in Sources */,
 				F8583AA726B5066C0067420F /* ExpenseView.swift in Sources */,
 				F8ED5C6C26B2B39600D46720 /* StorageManager.swift in Sources */,
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
@@ -543,7 +572,9 @@
 				F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */,
 				F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */,
 				F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */,
+				F8583AC326B691670067420F /* AppSettingsInitializer.swift in Sources */,
 				F8CA48B826ADA905005F5F19 /* CategoryBudget.swift in Sources */,
+				F8583AC826B6A8A70067420F /* CheckmarkModifier.swift in Sources */,
 				F8CA48C226AFE180005F5F19 /* ExpenseEntryView.swift in Sources */,
 				F8ED5C4D26B0163500D46720 /* ExpenseEntryViewModel.swift in Sources */,
 				F8CA48AA26AD43DD005F5F19 /* SummaryCategoryBudgetView.swift in Sources */,
@@ -554,6 +585,7 @@
 				F8ED5C6826B248AD00D46720 /* ExpenseObject.swift in Sources */,
 				F8ED5C4F26B0164400D46720 /* Currency.swift in Sources */,
 				F8ED5C6A26B248FB00D46720 /* Persistable.swift in Sources */,
+				F8583AC026B6388F0067420F /* SettingsIconView.swift in Sources */,
 				F8ED5C5D26B1820B00D46720 /* Amount.swift in Sources */,
 				F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */,
 				F8CA48AC26AD6D63005F5F19 /* Splitter.swift in Sources */,

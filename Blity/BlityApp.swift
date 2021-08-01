@@ -11,22 +11,12 @@ import SwiftUI
 @main
 struct BlityApp: App {
     
-    private var cancellable: AnyCancellable?
-    
-    private let currencyFetcher: CurrencyFetcher = CurrencyNetworkServices()
+    private let settingsInitializer = AppSettingsInitializer()
     
     init() {
-        
-        let today = Date()
-        
-        guard AppSettings.shared.quoteForDate(today) == nil else { return }
-
-        cancellable = currencyFetcher.fetchCurrencyQuotes(date: today).sink { _ in }
-            receiveValue: { currencyQuotes in
-                AppSettings.shared.quoteWithDate = (today, currencyQuotes.quotes.USDNZD)
-            }
+        settingsInitializer.initialize()
     }
-    
+        
     var body: some Scene {
         WindowGroup {
             SummaryView()

@@ -18,6 +18,9 @@ struct SummaryView: View {
     @State
     private var offSet = CGFloat(0)
     
+    @State
+    private var isDisplayingCurrencySelection = false
+    
     init() {
         UITableView.appearance().backgroundColor = .clear
     }
@@ -29,6 +32,11 @@ struct SummaryView: View {
             VStack {
                 SummaryViewHeader(colors: [ColorPalette.secondaryColor, ColorPalette.primaryColor])
                     .frame(height: 150)
+                Spacer()
+            }
+            
+            VStack {
+                SettingsIconView(isDisplayingSettings: $isDisplayingCurrencySelection)
                 Spacer()
             }
             
@@ -76,6 +84,10 @@ struct SummaryView: View {
                 .frame(height: tabHeight)
             }
             
+        }
+        .sheet(isPresented: $isDisplayingCurrencySelection) {
+            CurrencyView(isDisplayingCurrencySelection: $isDisplayingCurrencySelection,
+                         selectedCurrency: $viewModel.defaultCurrency)
         }.edgesIgnoringSafeArea(.all)
     }
     

@@ -5,6 +5,7 @@
 //  Created by Eduardo Dias on 30/07/21.
 //
 
+import Combine
 import Foundation
 
 class SummaryViewModel: ObservableObject {
@@ -15,10 +16,20 @@ class SummaryViewModel: ObservableObject {
     @Published
     private (set) var categoryExpenses: [CategoryExpenses] = []
     
-    private var storage: Storage.Type
+    @Published
+    var defaultCurrency: Currency?
     
-    init(_ storage: Storage.Type = StorageManager.self) {
+    private var cancellable: AnyCancellable?
+    
+    private let storage: Storage.Type
+    
+    private var settings: Settings
+    
+    init(_ storage: Storage.Type = StorageManager.self, settings: Settings = AppSettings.shared) {
         self.storage = storage
+        self.settings = settings
+        self.defaultCurrency = settings.defaultCurrency
+        setupCurrencySubscription()
     }
     
     func loadCategoryExpenses() {
@@ -41,6 +52,13 @@ class SummaryViewModel: ObservableObject {
         return storage.retrieve(object: ExpenseObject.self)
             .filter { $0.date.month == today.month }
             .map { Expense(realmObject: $0) }
+    }
+    
+    private func setupCurrencySubscription() {
+        cancellable = $defaultCurrency.sink { _ in }
+            receiveValue: { [weak self] currency in
+                self?.settings.defaultCurrency = currency
+            }
     }
 }
 
