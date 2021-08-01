@@ -33,7 +33,7 @@ struct ExpenseEntryView: View {
                 
                 HStack (spacing: 2) {
                     TextField("Price", text: $viewModel.price)
-                        .keyboardType(.numberPad)
+                        .keyboardType(.decimalPad)
                     Spacer()
                     Picker(selection: $viewModel.currencySelection, label: Text("")) {
                         ForEach(viewModel.currencies, id: \.self) {
