@@ -64,7 +64,7 @@ struct SummaryCategoryView: View {
 struct SummaryCategoryView_Previews: PreviewProvider {
     
     static var expenses: CategoryExpenses {
-        let categoryBudget = CategoryBudget(category: .food, budget: 500)
+        let categoryBudget = CategoryBudget(category: .food)
         return CategoryExpenses(categoryBudget: categoryBudget, totalSpent: 200)
     }
     
