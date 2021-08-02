@@ -29,6 +29,7 @@
 		F8583ADF26B7F9730067420F /* BlityNetworkServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ADE26B7F9730067420F /* BlityNetworkServicesTests.swift */; };
 		F8583AE126B7F97C0067420F /* MockCurrencyNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AE026B7F97B0067420F /* MockCurrencyNetworkServices.swift */; };
 		F8583AE326B7F9860067420F /* MockRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AE226B7F9860067420F /* MockRestClient.swift */; };
+		F8583AE626B800C30067420F /* CurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AE526B800C30067420F /* CurrencyViewModelTests.swift */; };
 		F85FB42A26B3BEC0001508FE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* MainViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* MainView.swift */; };
@@ -102,6 +103,7 @@
 		F8583ADE26B7F9730067420F /* BlityNetworkServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlityNetworkServicesTests.swift; sourceTree = "<group>"; };
 		F8583AE026B7F97B0067420F /* MockCurrencyNetworkServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCurrencyNetworkServices.swift; sourceTree = "<group>"; };
 		F8583AE226B7F9860067420F /* MockRestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRestClient.swift; sourceTree = "<group>"; };
+		F8583AE526B800C30067420F /* CurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModelTests.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				F8583ADC26B7F8D40067420F /* SerializerTests.swift */,
 				F8583AD626B7F7C50067420F /* NetworkStatusHandlerTests.swift */,
 				F8CA488026AD297E005F5F19 /* Info.plist */,
+				F8583AE526B800C30067420F /* CurrencyViewModelTests.swift */,
 			);
 			path = BlityTests;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				F8583ADF26B7F9730067420F /* BlityNetworkServicesTests.swift in Sources */,
 				F8583AE126B7F97C0067420F /* MockCurrencyNetworkServices.swift in Sources */,
 				F8583ADD26B7F8D40067420F /* SerializerTests.swift in Sources */,
+				F8583AE626B800C30067420F /* CurrencyViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
