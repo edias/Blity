@@ -33,6 +33,7 @@ class ExpenseEntryViewModel: ObservableObject {
     var isExpenseValid = false
     
     var expense: Expense? {
+        guard isExpenseValid else { return nil }
         return Expense(description: description, category: categorySelection, amount: Amount(price, currency: currencySelection), date: dateSelection)
     }
     
