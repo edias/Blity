@@ -278,6 +278,15 @@
 			path = EmptyState;
 			sourceTree = "<group>";
 		};
+		F8583AEB26B839560067420F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F8583AE226B7F9860067420F /* MockRestClient.swift */,
+				F8583AE026B7F97B0067420F /* MockCurrencyNetworkServices.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		F85FB42B26B40CBE001508FE /* EntryView */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,9 +341,8 @@
 		F8CA487D26AD297E005F5F19 /* BlityTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8583AE226B7F9860067420F /* MockRestClient.swift */,
+				F8583AEB26B839560067420F /* Mocks */,
 				F8583ADE26B7F9730067420F /* BlityNetworkServicesTests.swift */,
-				F8583AE026B7F97B0067420F /* MockCurrencyNetworkServices.swift */,
 				F8583ADC26B7F8D40067420F /* SerializerTests.swift */,
 				F8583AD626B7F7C50067420F /* NetworkStatusHandlerTests.swift */,
 				F8CA488026AD297E005F5F19 /* Info.plist */,
