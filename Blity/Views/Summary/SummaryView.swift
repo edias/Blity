@@ -9,10 +9,8 @@ import SwiftUI
 
 struct SummaryView: View {
     
-    @State
     var expenses: [CategoryExpenses]
     
-    @State
     var emptyState: EmptyState?
     
     @Binding

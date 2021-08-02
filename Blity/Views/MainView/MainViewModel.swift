@@ -11,7 +11,7 @@ import Foundation
 class MainViewModel: ObservableObject {
     
     @Published
-    private (set) var emptyState: EmptyState? = .summary
+    private (set) var emptyState: EmptyState?
     
     @Published
     private (set) var totalExpenses: Amount = Amount("0.00")
