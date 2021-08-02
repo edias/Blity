@@ -32,6 +32,7 @@
 		F8583AE626B800C30067420F /* CurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AE526B800C30067420F /* CurrencyViewModelTests.swift */; };
 		F8583AE826B8082D0067420F /* SummaryCategoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AE726B8082D0067420F /* SummaryCategoryViewModelTests.swift */; };
 		F8583AEA26B80E2E0067420F /* ExpenseEntryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AE926B80E2E0067420F /* ExpenseEntryViewModelTests.swift */; };
+		F8583AEF26B84A6C0067420F /* ExpensesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AEE26B84A6C0067420F /* ExpensesViewModelTests.swift */; };
 		F85FB42A26B3BEC0001508FE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* MainViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* MainView.swift */; };
@@ -100,6 +101,7 @@
 		F8583AE526B800C30067420F /* CurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModelTests.swift; sourceTree = "<group>"; };
 		F8583AE726B8082D0067420F /* SummaryCategoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCategoryViewModelTests.swift; sourceTree = "<group>"; };
 		F8583AE926B80E2E0067420F /* ExpenseEntryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntryViewModelTests.swift; sourceTree = "<group>"; };
+		F8583AEE26B84A6C0067420F /* ExpensesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewModelTests.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				F8583AE526B800C30067420F /* CurrencyViewModelTests.swift */,
 				F8583AE726B8082D0067420F /* SummaryCategoryViewModelTests.swift */,
 				F8583AE926B80E2E0067420F /* ExpenseEntryViewModelTests.swift */,
+				F8583AEE26B84A6C0067420F /* ExpensesViewModelTests.swift */,
 			);
 			path = BlityTests;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				F8583AE826B8082D0067420F /* SummaryCategoryViewModelTests.swift in Sources */,
 				F8583ADD26B7F8D40067420F /* SerializerTests.swift in Sources */,
 				F8583AE626B800C30067420F /* CurrencyViewModelTests.swift in Sources */,
+				F8583AEF26B84A6C0067420F /* ExpensesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
