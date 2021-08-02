@@ -19,12 +19,6 @@ struct MainView: View {
     private var selectedTab = 0
     
     @State
-    private var tabHeight = CGFloat(0)
-    
-    @State
-    private var tabOffSet = CGFloat(0)
-    
-    @State
     private var isDisplayingCurrencySelection = false
     
     init() {
@@ -33,68 +27,31 @@ struct MainView: View {
     
     var body: some View {
         
-        ZStack {
-            
-            Group {
-                VStack {
-                    MainHeaderBackgroundView(colors: [ColorPalette.secondaryColor, ColorPalette.primaryColor])
-                        .frame(height: 150)
-                    Spacer()
-                }
-                
-                VStack {
-                    SettingsIconView(isDisplayingSettings: $isDisplayingCurrencySelection)
-                    Spacer()
-                }
-                
-                VStack {
-                    Text(viewModel.totalExpenses.formattedValueWithCurrency)
-                        .font(.title)
-                        .foregroundColor(ColorPalette.contrastColor)
-                        .padding(.top, 80)
-                    Text("spent this month")
-                        .font(.subheadline)
-                        .foregroundColor(ColorPalette.contrastColor)
-                    Spacer()
-                }
+        TabView (selection: $selectedTab) {
+
+            SummaryView(expenses: viewModel.categoryExpenses,
+                        totalExpense: viewModel.totalExpenses.formattedValueWithCurrency,
+                        isDisplayingCurrencySelection: $isDisplayingCurrencySelection,
+                        isExpenseInProcess: $isExpenseInProcess,
+                        selectedTab: $selectedTab,
+                        emptyState: viewModel.emptyState)
+            .tabItem {
+                Image("DashboardIcon")
+                Text("Summary")
             }
-            
-            GeometryReader { geometry in
+            .tag(0)
+            .onAppear(perform: { viewModel.loadCategoryExpenses() })
 
-                TabView (selection: $selectedTab) {
-
-                    SummaryView(expenses: viewModel.categoryExpenses,
-                                emptyState: viewModel.emptyState,
-                                selectedTab: $selectedTab,
-                                isExpenseInProcess: $isExpenseInProcess)
-                    .tag(0)
-                    .onAppear(perform: {
-                        resizeHeight(tabOffSet: 170, totalHeight: geometry.size.height)
-                        viewModel.loadCategoryExpenses()
-                    })
-
-                    ExpensesView(isExpenseInProcess: $isExpenseInProcess)
-                        .tabItem {
-                            Image("MoneyIcon")
-                            Text("Expenses")
-                        }
-                        .tag(1)
-                        .onAppear(perform: {
-                            resizeHeight(totalHeight: geometry.size.height)
-                        })
-                }
-                .offset(y: tabOffSet)
-                .frame(height: tabHeight)
+            ExpensesView(isExpenseInProcess: $isExpenseInProcess)
+            .tabItem {
+                Image("MoneyIcon")
+                Text("Expenses")
             }
+            .tag(1)
         }
         .sheet(isPresented: $isDisplayingCurrencySelection, onDismiss: { viewModel.loadCategoryExpenses() }) {
             CurrencyView(isDisplayingCurrencySelection: $isDisplayingCurrencySelection)
-        }.edgesIgnoringSafeArea(.all)
-    }
-    
-    private func resizeHeight(tabOffSet: CGFloat = 0, totalHeight: CGFloat) {
-        self.tabOffSet = tabOffSet
-        self.tabHeight = totalHeight - tabOffSet
+        }
     }
 }
 
