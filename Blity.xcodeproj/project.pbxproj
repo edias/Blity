@@ -72,13 +72,6 @@
 			remoteGlobalIDString = F8CA486826AD297E005F5F19;
 			remoteInfo = Blity;
 		};
-		F8CA488626AD297E005F5F19 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8CA486126AD297D005F5F19 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F8CA486826AD297E005F5F19;
-			remoteInfo = Blity;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -116,7 +109,6 @@
 		F8CA487526AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8CA487A26AD297E005F5F19 /* BlityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA488026AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8CA488526AD297E005F5F19 /* BlityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA488B26AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleWithBottomCurve.swift; sourceTree = "<group>"; };
 		F8CA489B26AD3780005F5F19 /* SummaryViewHeaderBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewHeaderBackground.swift; sourceTree = "<group>"; };
@@ -154,13 +146,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F8CA487726AD297E005F5F19 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8CA488226AD297E005F5F19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +296,6 @@
 			children = (
 				F8CA486926AD297E005F5F19 /* Blity.app */,
 				F8CA487A26AD297E005F5F19 /* BlityTests.xctest */,
-				F8CA488526AD297E005F5F19 /* BlityUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -509,24 +493,6 @@
 			productReference = F8CA487A26AD297E005F5F19 /* BlityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F8CA488426AD297E005F5F19 /* BlityUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F8CA489426AD297E005F5F19 /* Build configuration list for PBXNativeTarget "BlityUITests" */;
-			buildPhases = (
-				F8CA488126AD297E005F5F19 /* Sources */,
-				F8CA488226AD297E005F5F19 /* Frameworks */,
-				F8CA488326AD297E005F5F19 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F8CA488726AD297E005F5F19 /* PBXTargetDependency */,
-			);
-			name = BlityUITests;
-			productName = BlityUITests;
-			productReference = F8CA488526AD297E005F5F19 /* BlityUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -540,10 +506,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					F8CA487926AD297E005F5F19 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = F8CA486826AD297E005F5F19;
-					};
-					F8CA488426AD297E005F5F19 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = F8CA486826AD297E005F5F19;
 					};
@@ -567,7 +529,6 @@
 			targets = (
 				F8CA486826AD297E005F5F19 /* Blity */,
 				F8CA487926AD297E005F5F19 /* BlityTests */,
-				F8CA488426AD297E005F5F19 /* BlityUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -583,13 +544,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F8CA487826AD297E005F5F19 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8CA488326AD297E005F5F19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -664,13 +618,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8CA488126AD297E005F5F19 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -678,11 +625,6 @@
 			isa = PBXTargetDependency;
 			target = F8CA486826AD297E005F5F19 /* Blity */;
 			targetProxy = F8CA487B26AD297E005F5F19 /* PBXContainerItemProxy */;
-		};
-		F8CA488726AD297E005F5F19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F8CA486826AD297E005F5F19 /* Blity */;
-			targetProxy = F8CA488626AD297E005F5F19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -891,46 +833,6 @@
 			};
 			name = Release;
 		};
-		F8CA489526AD297E005F5F19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DW4ZNXNDJB;
-				INFOPLIST_FILE = BlityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.BlityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Blity;
-			};
-			name = Debug;
-		};
-		F8CA489626AD297E005F5F19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DW4ZNXNDJB;
-				INFOPLIST_FILE = BlityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = immersia.com.au.BlityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Blity;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -957,15 +859,6 @@
 			buildConfigurations = (
 				F8CA489226AD297E005F5F19 /* Debug */,
 				F8CA489326AD297E005F5F19 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8CA489426AD297E005F5F19 /* Build configuration list for PBXNativeTarget "BlityUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8CA489526AD297E005F5F19 /* Debug */,
-				F8CA489626AD297E005F5F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
