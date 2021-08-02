@@ -9,7 +9,10 @@ import XCTest
 @testable import Blity
 
 class SummaryCategoryViewModelTests: XCTestCase {
-
+    
+    override func setUp() {
+        AppSettings.shared.selectedCurrency = .NZ
+    }
 
     func test_summaryCategoryViewModelOutputPropertiesCorrectly() {
         
