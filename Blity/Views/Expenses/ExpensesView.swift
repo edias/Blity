@@ -12,17 +12,9 @@ struct ExpensesView: View {
     @ObservedObject
     private var viewModel = ExpensesViewModel()
     
-    @State
-    private var isExpenseInProcess = false
-    
-    init() {
-        let navigationBarAppearace = UINavigationBar.appearance()
-        navigationBarAppearace.backgroundColor = UIColor(ColorPalette.primaryColor)
-        navigationBarAppearace.barTintColor = UIColor(ColorPalette.primaryColor)
-        navigationBarAppearace.tintColor = UIColor(ColorPalette.contrastColor)
-        navigationBarAppearace.titleTextAttributes = [.foregroundColor: UIColor(ColorPalette.contrastColor)]
-    }
-    
+    @Binding
+    var isExpenseInProcess:Bool
+        
     var body: some View {
         
         NavigationView {
@@ -44,16 +36,26 @@ struct ExpensesView: View {
                     Image(systemName: "plus")
                 }
             }
-        }.sheet(isPresented: $isExpenseInProcess) {
+        }
+        .sheet(isPresented: $isExpenseInProcess) {
             ExpenseEntryView(isExpenseInProcess: $isExpenseInProcess, completionHandler: { expense in
                 viewModel.addExpense(expense)
             })
         }
+        .onAppear { styleNavigationBar() }
+    }
+    
+    private func styleNavigationBar() {
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.backgroundColor = UIColor(ColorPalette.primaryColor)
+        navigationBarAppearace.barTintColor = UIColor(ColorPalette.primaryColor)
+        navigationBarAppearace.tintColor = UIColor(ColorPalette.contrastColor)
+        navigationBarAppearace.titleTextAttributes = [.foregroundColor: UIColor(ColorPalette.contrastColor)]
     }
 }
 
 struct ExpensesView_Previews: PreviewProvider {
     static var previews: some View {
-        ExpensesView()
+        ExpensesView(isExpenseInProcess: .constant(false))
     }
 }

@@ -40,10 +40,3 @@ struct CurrencyView_Previews: PreviewProvider {
         CurrencyView(isDisplayingCurrencySelection: .constant(false))
     }
 }
-
-private extension View {
-    @ViewBuilder
-    func checkMark(when condition: Bool) -> some View {
-        modifier(CheckmarkModifier(checked: condition))
-    }
-}

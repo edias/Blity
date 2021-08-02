@@ -21,15 +21,18 @@
 		F8583AC826B6A8A70067420F /* CheckmarkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */; };
 		F8583ACA26B6C18A0067420F /* AmountConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC926B6C18A0067420F /* AmountConverter.swift */; };
 		F8583ACC26B7C4D70067420F /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ACB26B7C4D70067420F /* CurrencyViewModel.swift */; };
-		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
+		F8583ACF26B7D4EA0067420F /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ACE26B7D4EA0067420F /* EmptyStateView.swift */; };
+		F8583AD126B7E8140067420F /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AD026B7E8140067420F /* SummaryView.swift */; };
+		F8583AD326B7F35C0067420F /* View+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AD226B7F35C0067420F /* View+Builder.swift */; };
+		F85FB42A26B3BEC0001508FE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* MainViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
-		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
+		F8CA486F26AD297E005F5F19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* MainView.swift */; };
 		F8CA487126AD297E005F5F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CA487026AD297E005F5F19 /* Assets.xcassets */; };
 		F8CA487426AD297E005F5F19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CA487326AD297E005F5F19 /* Preview Assets.xcassets */; };
 		F8CA487F26AD297E005F5F19 /* BlityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA487E26AD297E005F5F19 /* BlityTests.swift */; };
 		F8CA488A26AD297E005F5F19 /* BlityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA488926AD297E005F5F19 /* BlityUITests.swift */; };
 		F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */; };
-		F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA489B26AD3780005F5F19 /* SummaryViewHeader.swift */; };
+		F8CA489C26AD3780005F5F19 /* SummaryViewHeaderBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA489B26AD3780005F5F19 /* SummaryViewHeaderBackground.swift */; };
 		F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA489D26AD38A8005F5F19 /* ColorPalette.swift */; };
 		F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48A426AD3DCE005F5F19 /* SummaryCategoryView.swift */; };
 		F8CA48AA26AD43DD005F5F19 /* SummaryCategoryBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA48A926AD43DD005F5F19 /* SummaryCategoryBudgetView.swift */; };
@@ -87,10 +90,13 @@
 		F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkModifier.swift; sourceTree = "<group>"; };
 		F8583AC926B6C18A0067420F /* AmountConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConverter.swift; sourceTree = "<group>"; };
 		F8583ACB26B7C4D70067420F /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
-		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
+		F8583ACE26B7D4EA0067420F /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		F8583AD026B7E8140067420F /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		F8583AD226B7F35C0067420F /* View+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Builder.swift"; sourceTree = "<group>"; };
+		F85FB42926B3BEC0001508FE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
-		F8CA486E26AD297E005F5F19 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		F8CA486E26AD297E005F5F19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F8CA487026AD297E005F5F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CA487326AD297E005F5F19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8CA487526AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +107,7 @@
 		F8CA488926AD297E005F5F19 /* BlityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityUITests.swift; sourceTree = "<group>"; };
 		F8CA488B26AD297E005F5F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleWithBottomCurve.swift; sourceTree = "<group>"; };
-		F8CA489B26AD3780005F5F19 /* SummaryViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewHeader.swift; sourceTree = "<group>"; };
+		F8CA489B26AD3780005F5F19 /* SummaryViewHeaderBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewHeaderBackground.swift; sourceTree = "<group>"; };
 		F8CA489D26AD38A8005F5F19 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		F8CA48A426AD3DCE005F5F19 /* SummaryCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCategoryView.swift; sourceTree = "<group>"; };
 		F8CA48A926AD43DD005F5F19 /* SummaryCategoryBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCategoryBudgetView.swift; sourceTree = "<group>"; };
@@ -252,6 +258,14 @@
 			path = Currency;
 			sourceTree = "<group>";
 		};
+		F8583ACD26B7D4D70067420F /* EmptyState */ = {
+			isa = PBXGroup;
+			children = (
+				F8583ACE26B7D4EA0067420F /* EmptyStateView.swift */,
+			);
+			path = EmptyState;
+			sourceTree = "<group>";
+		};
 		F85FB42B26B40CBE001508FE /* EntryView */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +338,8 @@
 		F8CA489F26AD3A10005F5F19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8CA48AE26AD79C1005F5F19 /* MainView */,
+				F8583ACD26B7D4D70067420F /* EmptyState */,
 				F8CA48A026AD3A16005F5F19 /* Summary */,
 				F8CA48BC26AFBA43005F5F19 /* Expenses */,
 			);
@@ -334,10 +350,8 @@
 			isa = PBXGroup;
 			children = (
 				F8583AC426B6A8740067420F /* Currency */,
-				F8CA48AE26AD79C1005F5F19 /* Header */,
 				F8CA48AD26AD798F005F5F19 /* Category */,
-				F8CA486E26AD297E005F5F19 /* SummaryView.swift */,
-				F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */,
+				F8583AD026B7E8140067420F /* SummaryView.swift */,
 			);
 			path = Summary;
 			sourceTree = "<group>";
@@ -354,14 +368,16 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		F8CA48AE26AD79C1005F5F19 /* Header */ = {
+		F8CA48AE26AD79C1005F5F19 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				F85FB42926B3BEC0001508FE /* MainViewModel.swift */,
+				F8CA486E26AD297E005F5F19 /* MainView.swift */,
 				F8CA489726AD2E70005F5F19 /* RectangleWithBottomCurve.swift */,
-				F8CA489B26AD3780005F5F19 /* SummaryViewHeader.swift */,
+				F8CA489B26AD3780005F5F19 /* SummaryViewHeaderBackground.swift */,
 				F8583ABF26B6388F0067420F /* SettingsIconView.swift */,
 			);
-			path = Header;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		F8CA48AF26AD7AC8005F5F19 /* Data */ = {
@@ -379,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				F8CA48BA26ADA932005F5F19 /* String+Utils.swift */,
+				F8583AD226B7F35C0067420F /* View+Builder.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -571,12 +588,14 @@
 				F8CA48A526AD3DCE005F5F19 /* SummaryCategoryView.swift in Sources */,
 				F8583ABE26B55BD70067420F /* AppSettings.swift in Sources */,
 				F8CA48BB26ADA932005F5F19 /* String+Utils.swift in Sources */,
-				F8CA489C26AD3780005F5F19 /* SummaryViewHeader.swift in Sources */,
+				F8CA489C26AD3780005F5F19 /* SummaryViewHeaderBackground.swift in Sources */,
 				F8ED5C5626B1073200D46720 /* ExpensesViewModel.swift in Sources */,
-				F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */,
+				F85FB42A26B3BEC0001508FE /* MainViewModel.swift in Sources */,
 				F8CA48B626AD8F97005F5F19 /* SummaryCategoryViewModel.swift in Sources */,
+				F8583ACF26B7D4EA0067420F /* EmptyStateView.swift in Sources */,
 				F8ED5C5126B105CE00D46720 /* ExpenseCategoryHeaderView.swift in Sources */,
-				F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */,
+				F8583AD326B7F35C0067420F /* View+Builder.swift in Sources */,
+				F8CA486F26AD297E005F5F19 /* MainView.swift in Sources */,
 				F8CA489826AD2E70005F5F19 /* RectangleWithBottomCurve.swift in Sources */,
 				F8CA48B126AD7AD5005F5F19 /* Category.swift in Sources */,
 				F8583AC326B691670067420F /* AppSettingsInitializer.swift in Sources */,
@@ -588,6 +607,7 @@
 				F8583AB026B53F9B0067420F /* Serializer.swift in Sources */,
 				F8583AAE26B53F9B0067420F /* NetworkServices.swift in Sources */,
 				F8ED5C5B26B181C900D46720 /* AmountFormatter.swift in Sources */,
+				F8583AD126B7E8140067420F /* SummaryView.swift in Sources */,
 				F8583ACA26B6C18A0067420F /* AmountConverter.swift in Sources */,
 				F8583ABC26B54C320067420F /* NZCurrencyRate.swift in Sources */,
 				F8ED5C6826B248AD00D46720 /* ExpenseObject.swift in Sources */,

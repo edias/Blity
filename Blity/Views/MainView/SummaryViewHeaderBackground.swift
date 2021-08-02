@@ -1,5 +1,5 @@
 //
-//  SummaryViewHeader.swift
+//  MainHeaderBackgroundView.swift
 //  Blity
 //
 //  Created by Eduardo Dias on 25/07/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SummaryViewHeader: View {
+struct MainHeaderBackgroundView: View {
     
     let colors: [Color]
     
@@ -20,9 +20,9 @@ struct SummaryViewHeader: View {
     }
 }
 
-struct SummaryViewHeader_Previews: PreviewProvider {
+struct SummaryViewHeaderBackground_Previews: PreviewProvider {
     static var previews: some View {
-        SummaryViewHeader(colors: [ColorPalette.primaryColor, ColorPalette.secondaryColor])
+        MainHeaderBackgroundView(colors: [ColorPalette.primaryColor, ColorPalette.secondaryColor])
             .previewLayout(.fixed(width: 400, height: 400))
     }
 }

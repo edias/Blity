@@ -1,5 +1,5 @@
 //
-//  SummaryViewModel.swift
+//  MainViewModel.swift
 //  Blity
 //
 //  Created by Eduardo Dias on 30/07/21.
@@ -8,7 +8,10 @@
 import Combine
 import Foundation
 
-class SummaryViewModel: ObservableObject {
+class MainViewModel: ObservableObject {
+    
+    @Published
+    private (set) var emptyState: EmptyState? = .summary
     
     @Published
     private (set) var totalExpenses: Amount = Amount("0.00")
@@ -16,6 +19,7 @@ class SummaryViewModel: ObservableObject {
     @Published
     private (set) var categoryExpenses: [CategoryExpenses] = [] {
         didSet {
+            emptyState = categoryExpenses.isEmpty ? .summary : nil
             calculateTotalExpenses()
         }
     }

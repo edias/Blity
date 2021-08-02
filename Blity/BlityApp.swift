@@ -19,7 +19,7 @@ struct BlityApp: App {
         
     var body: some Scene {
         WindowGroup {
-            SummaryView()
+            MainView()
         }
     }
 }
