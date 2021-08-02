@@ -58,6 +58,7 @@ struct EmptyStateView: View {
                 .padding(.top, 2)
             
             Spacer()
+            
             Button("Add expenses") {
                 retryAction()
             }
@@ -67,7 +68,8 @@ struct EmptyStateView: View {
             .font(.subheadline.weight(.bold))
             .background(ColorPalette.primaryColor)
             .cornerRadius(35)
-            .padding(.bottom, 20)
+            
+            Spacer(minLength: 350)
         }
         
         .frame(width: 350, alignment: .center)
