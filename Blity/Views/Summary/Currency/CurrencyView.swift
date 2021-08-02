@@ -12,8 +12,8 @@ struct CurrencyView: View {
     @Binding
     var isDisplayingCurrencySelection: Bool
     
-    @Binding
-    var selectedCurrency: Currency
+    @ObservedObject
+    private var viewModel = CurrencyViewModel()
     
     var body: some View {
         
@@ -23,10 +23,9 @@ struct CurrencyView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(ColorPalette.contrastColor)
                     .onTapGesture {
-                    self.selectedCurrency = currency
-                }.checkMark(when: selectedCurrency == currency)
+                        viewModel.selectedCurrency  = currency
+                    }.checkMark(when: viewModel.selectedCurrency == currency)
             }.navigationBarTitle(Text("Choose Default Currency"), displayMode: .inline)
-            
             .toolbar {
                 Button("Close") {
                     isDisplayingCurrencySelection = false
@@ -38,8 +37,7 @@ struct CurrencyView: View {
 
 struct CurrencyView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyView(isDisplayingCurrencySelection: .constant(false),
-                     selectedCurrency: .constant(.NZ))
+        CurrencyView(isDisplayingCurrencySelection: .constant(false))
     }
 }
 

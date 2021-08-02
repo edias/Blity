@@ -20,9 +20,6 @@ class SummaryViewModel: ObservableObject {
         }
     }
     
-    @Published
-    var selectedCurrency: Currency
-    
     private var subscriptions = Set<AnyCancellable>()
     
     private let storage: Storage.Type
@@ -32,8 +29,6 @@ class SummaryViewModel: ObservableObject {
     init(_ storage: Storage.Type = StorageManager.self, settings: Settings = AppSettings.shared) {
         self.storage = storage
         self.settings = settings
-        self.selectedCurrency = settings.selectedCurrency
-        setupCurrencySubscription()
     }
     
     func loadCategoryExpenses() {
@@ -52,13 +47,6 @@ class SummaryViewModel: ObservableObject {
         return storage.retrieve(object: ExpenseObject.self)
             .filter { $0.date.month == today.month }
             .map { Expense(realmObject: $0) }
-    }
-    
-    private func setupCurrencySubscription() {
-        $selectedCurrency.dropFirst().sink { currency in
-            self.settings.selectedCurrency = currency
-            self.loadCategoryExpenses()
-        }.store(in: &subscriptions)
     }
     
     private func calculateTotalExpenses() {

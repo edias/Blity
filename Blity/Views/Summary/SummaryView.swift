@@ -85,9 +85,8 @@ struct SummaryView: View {
             }
             
         }
-        .sheet(isPresented: $isDisplayingCurrencySelection) {
-            CurrencyView(isDisplayingCurrencySelection: $isDisplayingCurrencySelection,
-                         selectedCurrency: $viewModel.selectedCurrency)
+        .sheet(isPresented: $isDisplayingCurrencySelection, onDismiss: { viewModel.loadCategoryExpenses() }) {
+            CurrencyView(isDisplayingCurrencySelection: $isDisplayingCurrencySelection)
         }.edgesIgnoringSafeArea(.all)
     }
     

@@ -20,6 +20,7 @@
 		F8583AC626B6A88C0067420F /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC526B6A88C0067420F /* CurrencyView.swift */; };
 		F8583AC826B6A8A70067420F /* CheckmarkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */; };
 		F8583ACA26B6C18A0067420F /* AmountConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AC926B6C18A0067420F /* AmountConverter.swift */; };
+		F8583ACC26B7C4D70067420F /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ACB26B7C4D70067420F /* CurrencyViewModel.swift */; };
 		F85FB42A26B3BEC0001508FE /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* SummaryView.swift */; };
@@ -85,6 +86,7 @@
 		F8583AC526B6A88C0067420F /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 		F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkModifier.swift; sourceTree = "<group>"; };
 		F8583AC926B6C18A0067420F /* AmountConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConverter.swift; sourceTree = "<group>"; };
+		F8583ACB26B7C4D70067420F /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				F8583AC526B6A88C0067420F /* CurrencyView.swift */,
 				F8583AC726B6A8A70067420F /* CheckmarkModifier.swift */,
+				F8583ACB26B7C4D70067420F /* CurrencyViewModel.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CA48B426AD7AEF005F5F19 /* CategoryExpenses.swift in Sources */,
+				F8583ACC26B7C4D70067420F /* CurrencyViewModel.swift in Sources */,
 				F8583AB526B54B740067420F /* Environment.swift in Sources */,
 				F8CA489E26AD38A8005F5F19 /* ColorPalette.swift in Sources */,
 				F8583AAF26B53F9B0067420F /* NetworkStatusHandler.swift in Sources */,
