@@ -21,11 +21,7 @@ class ExpensesViewModel: ObservableObject {
         self.storage = storage
         loadExpenses()
     }
-    
-    private var expenses: [Expense] {
-        storage.retrieve(object: ExpenseObject.self).map { Expense(realmObject: $0) }
-    }
-    
+        
     func addExpense(_ expense: Expense) {
         
         storage.store(expense.managedObject)
