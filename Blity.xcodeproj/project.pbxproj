@@ -25,6 +25,7 @@
 		F8583AD126B7E8140067420F /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AD026B7E8140067420F /* SummaryView.swift */; };
 		F8583AD326B7F35C0067420F /* View+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AD226B7F35C0067420F /* View+Builder.swift */; };
 		F8583AD726B7F7C50067420F /* NetworkStatusHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583AD626B7F7C50067420F /* NetworkStatusHandlerTests.swift */; };
+		F8583ADD26B7F8D40067420F /* SerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8583ADC26B7F8D40067420F /* SerializerTests.swift */; };
 		F85FB42A26B3BEC0001508FE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB42926B3BEC0001508FE /* MainViewModel.swift */; };
 		F8CA486D26AD297E005F5F19 /* BlityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486C26AD297E005F5F19 /* BlityApp.swift */; };
 		F8CA486F26AD297E005F5F19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA486E26AD297E005F5F19 /* MainView.swift */; };
@@ -94,6 +95,7 @@
 		F8583AD026B7E8140067420F /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		F8583AD226B7F35C0067420F /* View+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Builder.swift"; sourceTree = "<group>"; };
 		F8583AD626B7F7C50067420F /* NetworkStatusHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatusHandlerTests.swift; sourceTree = "<group>"; };
+		F8583ADC26B7F8D40067420F /* SerializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializerTests.swift; sourceTree = "<group>"; };
 		F85FB42926B3BEC0001508FE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F8CA486926AD297E005F5F19 /* Blity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CA486C26AD297E005F5F19 /* BlityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlityApp.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 		F8CA487D26AD297E005F5F19 /* BlityTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8583ADC26B7F8D40067420F /* SerializerTests.swift */,
 				F8583AD626B7F7C50067420F /* NetworkStatusHandlerTests.swift */,
 				F8CA488026AD297E005F5F19 /* Info.plist */,
 			);
@@ -628,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8583AD726B7F7C50067420F /* NetworkStatusHandlerTests.swift in Sources */,
+				F8583ADD26B7F8D40067420F /* SerializerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
