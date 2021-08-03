@@ -19,7 +19,7 @@ private struct EmptyStateDataModel {
 
 struct EmptyStateView: View {
     
-    private var retryAction: () -> Void
+    private var action: () -> Void
     
     @State
     private var dataModel: EmptyStateDataModel
@@ -31,7 +31,7 @@ struct EmptyStateView: View {
                                                 title: "No summary",
                                                 message: "Start adding your expenses.")
         }
-        self.retryAction = retryAction
+        self.action = retryAction
     }
     
     var body: some View {
@@ -60,7 +60,7 @@ struct EmptyStateView: View {
             Spacer()
             
             Button("Add expenses") {
-                retryAction()
+                action()
             }
             .foregroundColor(ColorPalette.contrastColor)
             .padding(.vertical, 12)
