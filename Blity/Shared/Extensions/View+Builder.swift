@@ -10,10 +10,10 @@ import SwiftUI
 extension View {
     
     @ViewBuilder
-    func onEmpty(_ emptyState: EmptyState? = nil, retryAction: @escaping () -> Void) -> some View {
+    func onEmpty(_ emptyState: EmptyState? = nil, action: @escaping () -> Void) -> some View {
         ZStack {
             if let emptyState = emptyState {
-                EmptyStateView(emptyState, retryAction: retryAction)
+                EmptyStateView(emptyState, action: action)
             } else {
                 self
             }

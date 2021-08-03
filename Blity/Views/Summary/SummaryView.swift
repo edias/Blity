@@ -57,7 +57,7 @@ struct SummaryView: View {
                     SummaryCategoryView(expenses: expenses)
                 }.listRowBackground(Color.clear)
             }
-            .onEmpty (emptyState, retryAction: {
+            .onEmpty (emptyState, action: {
                 selectedTab = 1
                 isExpenseInProcess = true
             })

@@ -11,7 +11,14 @@ import Foundation
 class ExpensesViewModel: ObservableObject {
     
     @Published
-    private (set) var categories: [Category] = []
+    private (set) var emptyState: EmptyState?
+    
+    @Published
+    private (set) var categories: [Category] = [] {
+        didSet {
+            emptyState = categories.isEmpty ? .expenses : nil
+        }
+    }
     
     private var expensesDict: [Category: [Expense]] = [:]
     

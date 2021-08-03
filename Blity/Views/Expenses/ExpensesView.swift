@@ -29,6 +29,9 @@ struct ExpensesView: View {
                     }
                 }
             }
+            .onEmpty (viewModel.emptyState, action: {
+                        isExpenseInProcess = true
+            })
             .listStyle(InsetGroupedListStyle())
             .navigationBarTitle(Text("Expenses"), displayMode: .inline)
             .toolbar {
